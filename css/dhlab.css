@@ -24,10 +24,10 @@ body {
   line-height: var(--bs-body-line-height);
 }
 
-
+/*
 .main-container {
   max-width: 62em;
-}
+}*/
  
 section {
   padding-top: 2rem;
