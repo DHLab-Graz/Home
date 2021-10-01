@@ -23,6 +23,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+hr{
+    color: black;
+}
+
 /*
 .main-container {
   max-width: 62em;
