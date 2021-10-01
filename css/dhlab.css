@@ -15,13 +15,13 @@
 /*
  * Base structure
  */
-
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
+  font-family: 'Roboto', sans-serif;
 }
 
 /*
@@ -67,6 +67,6 @@ section {
  * Images
  */
 #home_img{
-    width: 35%;
+    width: 100%;
 }
 
