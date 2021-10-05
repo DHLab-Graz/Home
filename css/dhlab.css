@@ -38,6 +38,9 @@ section {
 }
 
 
+#home {
+    margin-top: 50px;
+}
 
 
 /*
@@ -65,6 +68,7 @@ section {
   color: #fff;
   border-bottom-color: #fff;
 }
+
 
 /*
  * Images
