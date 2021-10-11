@@ -447,7 +447,8 @@
           <div class="container mt-3">
             <div class="container">
               <h2 class="display-5 text-center fw-bolder">Contact</h2>
-              <p class="lead text-center">Please feel free to contact us at any time and to learn more about our DH services.</p>
+              <p class="lead text-center">Please feel free to contact us at any time and to learn
+                more about our DH services.</p>
               <div class="row py-5 row-cols-1 row-cols-lg-1">
                 <div class="col text-center">
                   <p>
@@ -493,7 +494,9 @@
               <ul class="list-unstyled text-small text-center">
                 <li>
                   <small>
-                    <a class="link-secondary" href="#impressum" id="imprintlink">Imprint</a>
+                    <a class="link-secondary" data-bs-toggle="collapse" href="#imprint"
+                      role="button" aria-expanded="false" aria-controls="imprint" id="imprintlink"
+                      >Imprint</a>
                   </small>
                 </li>
               </ul>
@@ -505,8 +508,36 @@
               </small>
             </div>
           </div>
-          <div class="row text-center" id="imprint">
-            <p>Impressumstext</p>
+          <div class="collapse row text-center test-muted" id="imprint">
+            <p>DHLab Graz OG</p>
+            <!-- Mindestanforderungen Impresssum laut WKO: https://www.wko.at/service/wirtschaftsrecht-gewerberecht/Das-korrekte-Website-Impressum.pdf -->
+            <!--Anforderungen laut UGB/GEwO:-->
+            <small>Sitz laut Firmenbuch<br /> Firmenbuchnummer<br /> Firmenbuchgericht</small>
+            <!--Anforderungen laut ECG - können auch mit Link zum Firmen A-Z der WKO abgedeckt werden - siehe Seite 6 der Broschüre "ECG-Service von wko.at":-->
+            <small>Telefonnr. ODER Fax ODER Web-Formular</small>
+            <!--(zusätzlich zur Mailadresse muss es laut ECG noch eine weitere Kontaktmöglichkeit geben)-->
+            <small>Mitgliedschaft bei Wirtschaftskammerorganisation(en)<br /> Aufsichtsbehörde <!--wenn
+              die Tätigkeit einer behördlichen Aufsicht unterliegt; es wird empfohlen, in jedem Fall
+              die jeweilige Gewerbebehörde bzw sonstige die Berufsbewilligung ausstellende Behörde
+              anzugeben--><br /> Hinweis auf anwendbare gewerbe- oder berufsrechtliche Vorschriften
+              <!--empfohlene Angabe für gewerbliche Tätigkeiten: idR die GewO--><br /> Zugang zu
+              anwendbaren gewerbe- oder berufsrechtlichen Vorschriften<!--(z.B. Link auf
+              www.ris.bka.gv.at)--><br /> UID-Nummer <!--sofern vorhanden--></small>
+            <!-- Kleine Offenlegungspflicht, da nur "kleine Website" (= ohne Beeinflussung der Meinungsbildung) -->
+            <div class="py-4">
+              <p class="headingImprint">Disclosure Requirements according to the Austrian Media Act
+                (§ 25 Abs 5 MedienG):</p>
+              <small>DHLAB Graz<br /> Unternehmensgegenstand des Medieninhabers<br /> Sitz des
+                Medieninhabers</small>
+            </div>
+            <!--Zusätzlich Angaben zur Online-Streitbeilegung:-->
+            <div class="py-4">
+              <p class="headingImprint">Complaints:</p>
+              <small>Consumers have the possibility of complaint using the EU's online dispute
+                resolution platform: <a href="http://ec.europa.eu/odr" target="_blank"
+                  >http://ec.europa.eu/odr</a>. <br />You can also send a complaint to the e-mail
+                address given above. </small>
+            </div>
           </div>
         </div>
       </footer>

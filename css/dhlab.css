@@ -198,10 +198,9 @@ section {
  * Footer
  */
 
-#imprint {
-    display:none;
+.headingImprint {
+    text-decoration:underline;
 }
-
 
 
 
