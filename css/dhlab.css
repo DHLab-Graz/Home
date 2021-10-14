@@ -2,6 +2,10 @@
  * Globals
  */
 
+.dhlab-text-white{
+   color: #f3f3f3; 
+}
+
 
 /* Custom default button */
 .btn-secondary,
