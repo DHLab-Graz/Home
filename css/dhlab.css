@@ -116,7 +116,6 @@ section {
 
 
 
-
 /*
  * Work
  */
@@ -201,6 +200,18 @@ section {
 .projects img:hover {
     transform:scale(1.5);
 }
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper .item:nth-child(2){
+    align-self:flex-end;
+}
+
+
 
 /*
  * Footer

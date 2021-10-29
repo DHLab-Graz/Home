@@ -35,6 +35,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- icons -->
     <!-- Custom styles for this template -->
     <!-- <link href="/Home/css/dhlab.css" rel="stylesheet"> -->
@@ -43,10 +44,10 @@
   <body style="background-color: #f3f3f3;">
     <div class="main-container">
       <header class="mb-auto">
-        <div>
+        <div id="navbar">
           <!--<h3 class="float-md-start mb-0">DHLab Graz</h3>-->
           <nav
-            class="navbar nav-masthead navbar-expand-md navbar-dark fixed-top bg-dark justify-content-center ">
+            class="navbar nav-masthead navbar-expand-md navbar-dark fixed-top bg-dark justify-content-center">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#offer">Offer & Pricing</a>
@@ -182,19 +183,19 @@
                 <img src="img/they_bb.jpg" class="img-fluid rounded-circle" alt="We">
               </div>
               <div class="col py-3 lead fs-6 bios">
-                <p>Christian started his university carreer with a Master's Degree
-                  in Translation. Christopher, one the other hand, was more interested in the past and therefore
-                  holds a Master's Degree in History. Both of them finished a Joints Master's Degree
-                  in Digital Humanities at different times and not knowing each
-                  other yet. While Christian already started working as a research assistant at the
-                  Centre for Information Modelling (ZIM) at the University of Graz in 2012,
-                  Christopher took the same path in 2016, when he too became research assistant at
-                  the same Institute.</p>
-                <p>We soon found out that we were sharing a lot of interests in the fieled of Digital Humanities.
-                  Both focused working on technical development, data modelling, semantic
-                  web technologies and web programming. Whereas Christian is slightly more into data
-                  processing and linked data, Christopher prefers to rack his brain on resource
-                  discovery. Currently we both are PhD candidates in Digital Humanities.
+                <p>Christian started his university carreer with a Master's Degree in Translation.
+                  Christopher, one the other hand, was more interested in the past and therefore
+                  holds a Master's Degree in History. Both of us finished a Joints Master's Degree
+                  in Digital Humanities at different times and not knowing each other yet. While
+                  Christian already started working as a research assistant at the Centre for
+                  Information Modelling (ZIM) at the University of Graz in 2012, Christopher took
+                  the same path in 2016, when he too became research assistant at the same
+                  Institute.</p>
+                <p>We soon found out that we were sharing a lot of interests in the fieled of
+                  Digital Humanities. Both focused working on technical development, data modelling,
+                  semantic web technologies and web programming. Whereas Christian is slightly more
+                  into data processing and linked data, Christopher prefers to rack his brain on
+                  resource discovery. Currently we both are PhD candidates in Digital Humanities.
                   Christian's PhD thesis is about Linked Data and the potential of using Wikidata as
                   a hub between the Life Sciences and the Humanities, while Christopher's
                   dissertation project focuses on ontology-based resource discovery for research in
@@ -395,7 +396,7 @@
                 <!-- Gallery -->
                 <div class="gallery-block compact-gallery">
                   <div class="row">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-4 wrapper">
                       <div class="item zoom-on-hover projects">
                         <img class="img-fluid image w-75 shadow-1-strong rounded mb-4"
                           src="img/work_gallery/szd.jpg" alt="Stefan Zweig Digital">
@@ -418,7 +419,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-4 wrapper">
                       <div class="item zoom-on-hover projects">
                         <img class="img-fluid image w-75 shadow-1-strong rounded mb-4"
                           src="img/work_gallery/ufbas.jpg" alt="Urfehdebücher der Stadt Basel">
@@ -444,7 +445,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-4 wrapper">
                       <div class="item zoom-on-hover projects">
                         <img class="img-fluid image w-75 shadow-1-strong rounded mb-4"
                           src="img/work_gallery/aaif.jpg" alt="Adjective-Adverb Interfaces in
@@ -471,7 +472,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Gallery -->
               </div>
             </div>
           </div>
@@ -585,5 +585,10 @@
         </div>
       </footer>
     </div>
+    <script>
+            $('.nav-link').on('click', function () {
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+            });</script>
   </body>
 </html>
