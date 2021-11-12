@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="title" content="Digital Humanities Craft OG" />
-    <meta name="description" content="Digital Humanities Craft OG provides clients with comprehensive solutions for
+    <meta name="description"
+      content="Digital Humanities Craft OG provides clients with comprehensive solutions for
       research-driven IT services. A particular focus is on projects from the digital
       humanities and cultural heritage institutions.">
     <meta name="keywords"
@@ -44,8 +45,9 @@
       <header class="mb-auto">
         <div id="navbar">
           <nav
-            class="navbar nav-masthead navbar-expand-md navbar-dark fixed-top bg-dark justify-content-center">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            class="navbar nav-masthead navbar-expand-md navbar-dark fixed-top bg-dark justify-content-center"
+            id="scrollspy-navbar">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#offer">Offer & Pricing</a>
             <a class="nav-link" href="#work">Work</a>
@@ -53,10 +55,11 @@
           </nav>
         </div>
       </header>
-      <main>
+      <main data-bs-spy="scroll" data-bs-target="scrollspy-navbar">
         <!-- HOME -->
         <div id="home" class="text-center">
-          <img id="home_img" class="img-fluid" src="https://raw.githubusercontent.com/DigitalHumanitiesCraft/Home/gh-pages/icons/dhcraft_icons/dh_craft_solo.svg"
+          <img id="home_img" class="img-fluid"
+            src="https://raw.githubusercontent.com/DigitalHumanitiesCraft/Home/gh-pages/icons/dhcraft_icons/dh_craft_solo.svg"
             alt="DHCraft Banner" />
           <h1>Digital Humanities Craft OG</h1>
           <p class="lead fs-5 mt-3 px-2">Providing solutions for research-driven IT
@@ -526,8 +529,7 @@
                         />
                       </svg>
                     </a>
-                    <a href="https://www.linkedin.com/company/dhcraft" class="btn"
-                      target=_blank>
+                    <a href="https://www.linkedin.com/company/dhcraft" class="btn" target=_blank>
                       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                         fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                         <path
@@ -546,8 +548,8 @@
         <div class="container py-5">
           <div class="row">
             <div class="col">
-              <small class="d-block mb-3 text-muted">&copy; Digital Humanities Craft OG, Christopher Pollin & Christian Steiner,
-                2021</small>
+              <small class="d-block mb-3 text-muted">&copy; Digital Humanities Craft OG, Christopher
+                Pollin & Christian Steiner, 2021</small>
             </div>
             <div class="col">
               <ul class="list-unstyled text-small text-center">
@@ -587,8 +589,8 @@
             <div class="py-4">
               <p class="headingImprint">Disclosure Requirements according to the Austrian Media Act
                 (§ 25 Abs 5 MedienG):</p>
-              <small>Digital Humanities Craft OG<br /> Unternehmensgegenstand des Medieninhabers<br /> Sitz des
-                Medieninhabers</small>
+              <small>Digital Humanities Craft OG<br /> Unternehmensgegenstand des
+                Medieninhabers<br /> Sitz des Medieninhabers</small>
             </div>
             <!--Zusätzlich Angaben zur Online-Streitbeilegung:-->
             <div class="py-4">
@@ -603,15 +605,17 @@
       </footer>
     </div>
     <script>
-            $('.nav-link').on('click', function () {
-                $('.nav-link').removeClass('active');
-                $(this).addClass('active');
-            });
-            $('.accordion-button').click(function (event) {
-                event.stopPropagation();
-                event.stopImmediatePropagation();
-                $('.bi-arrow-right-square').toggle();
-                $('.bi-arrow-down-square').toggle();
+            $('.accordion-button').click(function () {
+                $(this).find('.bi-arrow-right-square').toggle();
+                $(this).find('.bi-arrow-down-square').toggle();
+            });</script>
+    <script>
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#scrollspy-navbar'
+            });</script>
+    <script>
+            $('.nav-link').click(function () {
+                $('body').addClass('stop-scrolling');
             });</script>
   </body>
 </html>
