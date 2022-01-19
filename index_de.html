@@ -461,6 +461,21 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+      $.get('https://ipapi.co/country/', function(country){
+        console.log("fst");
+      console.log(country)
+      })
+      if (country === "AT") {
+       window.location="Digital Humanities Craft OG DE.htm";
+      }
+      else if (country === "DE") {
+       window.location="Digital Humanities Craft OG DE.htm";
+      }
+      else {
+        window.location="Digital Humanities Craft OG.htm";
+      }
+      </script>
     <script>
             $('.accordion-button').click(function () {
                 $(this).find('.bi-arrow-right-square').toggle();
