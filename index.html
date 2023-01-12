@@ -52,6 +52,9 @@
 
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="./assets/css/theme.min.css?v=1.0" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
 
   <body id="homeSection" class="position-relative">
@@ -99,26 +102,44 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#aboutSection">Angebot</a>
+                <a
+                  class="nav-link"
+                  lang="de"
+                  href="#aboutSection"
+                  id="aboutSectionLink"
+                  >Angebot</a
+                >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#pricingSection">Preise</a>
+                <a
+                  class="nav-link"
+                  lang="de"
+                  href="#pricingSection"
+                  id="pricingSectionLink"
+                  >Preise</a
+                >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#workSection">Arbeit</a>
+                <a
+                  class="nav-link"
+                  lang="de"
+                  href="#workSection"
+                  id="workSectionLink"
+                  >Arbeit</a
+                >
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="#teamSection">Team</a>
               </li>
 
-              <!-- Button -->
               <li class="nav-item">
-                <a class="nav-link" href="#footer">Kontakt</a>
+                <a class="nav-link" lang="de" href="#footer" id="footerLink"
+                  >Kontakt</a
+                >
               </li>
-              <!-- End Button -->
             </ul>
           </div>
           <!-- End Collapse -->
@@ -140,7 +161,7 @@
             <div class="mb-7 text-center">
               <h1 class="display-4 mb-3">Digital Humanities Craft</h1>
 
-              <p class="lead">
+              <p class="lead switchLang showLang" lang="de">
                 Wir bieten Lösungen für forschungsorientierte
                 IT-Dienstleistungen.<br />
                 Unser Fokus liegt auf Projekten in
@@ -149,6 +170,22 @@
                     class="js-typedjs"
                     data-hs-typed-options='{
                         "strings": ["den Digital Humanities", "Kulturerbeinstitutionen", "Forschungskontexten"],
+                        "typeSpeed": 90,
+                        "loop": true,
+                        "backSpeed": 30,
+                        "backDelay": 2500
+                      }'
+                  ></span>
+                </span>
+              </p>
+              <p class="lead switchLang" lang="en">
+                We provide solutions for research-driven IT services.<br />
+                We focus on projects within
+                <span class="text-primary text-highlight-warning">
+                  <span
+                    class="js-typedjs"
+                    data-hs-typed-options='{
+                        "strings": ["the Digital Humanities", "Cultural Heritage Institutions", "research contexts"],
                         "typeSpeed": 90,
                         "loop": true,
                         "backSpeed": 30,
@@ -179,7 +216,10 @@
       >
         <!-- Heading -->
         <div class="w-lg-75 text-center mx-auto mb-5 mb-sm-9">
-          <h1>Was bieten wir?</h1>
+          <h1>
+            <span class="switchLang showLang" lang="de">Was bieten wir?</span
+            ><span class="switchLang" lang="en">What we do?</span>
+          </h1>
         </div>
         <!-- End Heading -->
 
@@ -217,7 +257,7 @@
               </span>
 
               <h4>Web Development</h4>
-              <p>
+              <p class="switchLang showLang" lang="de">
                 Wir besitzen jahrelange Erfahrung in der Implementierung von
                 <span class="text-primary fw-bold">Web Interfaces</span> für
                 Digitale Editionen, Sammlungen und Forschungsprojekte. Wann
@@ -230,6 +270,19 @@
                   >Linked Open Data principles</a
                 >
                 kompatibel.
+              </p>
+              <p class="switchLang" lang="en">
+                We have years of experience in implementing
+                <span class="text-primary fw-bold">web interfaces</span> for
+                digital editions, collections and research projects. We are
+                known to ensure compatibility of all our web projects with the
+                <a
+                  href="https://www.w3.org/DesignIssues/LinkedData"
+                  class="text-primary text-highlight-warning fw-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Linked Open Data principles</a
+                >.
               </p>
             </div>
             <!-- End Icon Blocks -->
@@ -259,8 +312,14 @@
                 </svg>
               </span>
 
-              <h4>Datentransformation &amp; Datenmodellierung</h4>
-              <p>
+              <h4>
+                <span class="switchLang showLang" lang="de"
+                  >Datentransformation &amp; Datenmodellierung</span
+                ><span class="switchLang" lang="en"
+                  >Data Transformation &amp; Data Modeling</span
+                >
+              </h4>
+              <p class="switchLang showLang" lang="de">
                 Die Transformation von Daten in etablierte Standards ist Teil
                 unseres Kerngeschäfts. Wir sind erfahrene
                 <span class="text-primary fw-bold">XSLT</span> und
@@ -275,6 +334,21 @@
                   >TEI</a
                 >, <span class="text-primary fw-bold">RDF</span>
                 und einer großen Bandbreite an anderen Standards.
+              </p>
+              <p class="switchLang" lang="en">
+                Transforming data into established standards is part of our core
+                business. We are experienced
+                <span class="text-primary fw-bold">XSLT</span> and
+                <span class="text-primary fw-bold">Python</span> programmers and
+                have extensive practice in modeling humanities domains with
+                <a
+                  href="https://tei-c.org/"
+                  class="text-primary text-highlight-warning fw-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >TEI</a
+                >, <span class="text-primary fw-bold">RDF</span>
+                and a wide range of other standards.
               </p>
             </div>
             <!-- End Icon Blocks -->
@@ -304,14 +378,23 @@
                 </svg>
               </span>
 
-              <h4>Datenanalyse</h4>
-              <p>
+              <h4>
+                <span class="switchLang showLang" lang="de">Datenanalyse</span
+                ><span class="switchLang" lang="en">Data Analysis</span>
+              </h4>
+              <p class="switchLang showLang" lang="de">
                 Wir haben uns auf die Analyse und Visualisierung von
                 Forschungsdaten mit Hilfe von
                 <span class="text-primary fw-bold">SPARQL</span>
                 und
                 <span class="text-primary fw-bold">JavaScript</span>
                 spezialisiert.
+              </p>
+              <p class="switchLang" lang="en">
+                We specialize in the analysis and visualization of research data
+                via
+                <span class="text-primary fw-bold">SPARQL</span>
+                and <span class="text-primary fw-bold">JavaScript</span>.
               </p>
             </div>
             <!-- End Icon Blocks -->
@@ -345,13 +428,21 @@
                 </svg>
               </span>
 
-              <h4>Lehre</h4>
-              <p class="mb-0">
+              <h4>
+                <span class="switchLang showLang" lang="de">Lehre</span
+                ><span class="switchLang" lang="en">Teaching</span>
+              </h4>
+              <p class="mb-0 switchLang showLang" lang="de">
                 Wir unterrichten die folgenden Themengebiete an
                 <span class="text-primary fw-bold">Universitäten</span> oder
                 <span class="text-primary fw-bold"
                   >spezialisierten Hochschulen</span
                 >:
+              </p>
+              <p class="mb-0 switchLang" lang="en">
+                We teach the following topics at
+                <span class="text-primary fw-bold">universities</span> or
+                <span class="text-primary fw-bold">specialized schools</span>:
               </p>
               <ul
                 class="list-checked list-checked-primary list-checked-sm small"
@@ -406,7 +497,7 @@
               </span>
 
               <h4>Consulting</h4>
-              <p>
+              <p class="switchLang showLang" lang="de">
                 Wenn Sie Fragen zu den Themen
                 <span class="text-primary fw-bold">Management</span>,
                 <span class="text-primary fw-bold">Planung</span> oder
@@ -415,6 +506,15 @@
                 Wir können bei Fragestellungen zu Modellierung,
                 Datenverarbeitung oder der digitalen Umsetzung ihrer Projekte
                 behilflich sein.
+              </p>
+              <p class="switchLang" lang="en">
+                If you have questions about the
+                <span class="text-primary fw-bold">management</span>,
+                <span class="text-primary fw-bold">planning</span> and
+                <span class="text-primary fw-bold">implementation</span> of
+                Digital Humanities projects, you are at the right place. We can
+                help with questions about modeling, data wrangling and the
+                digital implementation of your projects.
               </p>
             </div>
             <!-- End Icon Blocks -->
@@ -432,8 +532,12 @@
                 />
               </span>
 
-              <h4>Langzeitarchivierung</h4>
-              <p>
+              <h4>
+                <span class="switchLang showLang" lang="de"
+                  >Langzeitarchivierung</span
+                ><span class="switchLang" lang="en">Long-Term Archiving</span>
+              </h4>
+              <p class="switchLang showLang" lang="de">
                 Wir haben einen Kooperationsvertrag mit dem
                 <a
                   href="//zim.uni-graz.at"
@@ -454,6 +558,27 @@
                   >GAMS</a
                 >
                 betreibt.
+              </p>
+              <p class="switchLang" lang="en">
+                We have a cooperation contract with the
+                <a
+                  href="//zim.uni-graz.at"
+                  class="text-primary text-highlight-warning fw-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Centre for Information Modelling (ZIM) at the University of
+                  Graz
+                </a>
+                which runs the OAIS compliant and certified institutional
+                repository
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//gams.uni-graz.at"
+                  class="text-primary text-highlight-warning fw-bold"
+                  >GAMS</a
+                >.
               </p>
             </div>
             <!-- End Icon Blocks -->
@@ -477,10 +602,22 @@
         <!-- Heading -->
         <div class="w-md-60 w-lg-50 text-center mx-auto mb-7">
           <h2>
-            <span class="text-dark">Preise? Schreiben Sie uns!</span>
+            <span class="text-dark"
+              ><span class="switchLang showLang" lang="de"
+                >Preise? Schreiben Sie uns!</span
+              ><span class="switchLang" lang="en"
+                >Prices? Get in touch with us!</span
+              ></span
+            >
             <span class="fw-normal">
-              Wir arbeiten auf der Basis von individuellen Angeboten, die genau
-              auf Ihre Bedürfnisse zugeschnitten werden.
+              <span class="switchLang showLang" lang="de">
+                Wir arbeiten auf der Basis von individuellen Angeboten, die
+                genau auf Ihre Bedürfnisse zugeschnitten werden.
+              </span>
+              <span class="switchLang" lang="en">
+                We operate on the basis of individual offers tailored to your
+                specific needs.
+              </span>
             </span>
           </h2>
         </div>
@@ -500,7 +637,13 @@
             <!-- Heading -->
             <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
               <!-- <span class="text-cap text-dark-70">Success stories</span> -->
-              <h1>Eine Auswahl unserer abgeschlossenen Projekte</h1>
+              <h1>
+                <span class="switchLang showLang" lang="de"
+                  >Eine Auswahl unserer abgeschlossenen Projekte</span
+                ><span class="switchLang" lang="en"
+                  >A selection of our projects</span
+                >
+              </h1>
             </div>
             <!-- End Heading -->
 
@@ -525,8 +668,14 @@
                       <div class="card-body">
                         <div class="mb-3">Exil:Trans</div>
                         <p class="card-text">
-                          DH Craft &amp; Universität Wien, Zentrum für
-                          Translationswissenschaft
+                          <span class="switchLang showLang" lang="de"
+                            >DH Craft &amp; Universität Wien, Zentrum für
+                            Translationswissenschaft</span
+                          >
+                          <span class="switchLang" lang="en"
+                            >DH Craft &amp; University of Vienna, Centre for
+                            Translation Studies</span
+                          >
                         </p>
                       </div>
                     </a>
@@ -608,8 +757,13 @@
                           metropolitan province
                         </div>
                         <p class="card-text">
-                          ZIM-ACDH &amp; Österreichische Akademie der
-                          Wissenschaften
+                          <span class="switchLang showLang" lang="de"
+                            >ZIM-ACDH &amp; Österreichische Akademie der
+                            Wissenschaften</span
+                          >
+                          <span class="switchLang" lang="en"
+                            >ZIM-ACDH &amp; Austrian Academy of Sciences</span
+                          >
                         </p>
                       </div>
                     </a>
@@ -637,7 +791,13 @@
                           Adjective-Adverb Interfaces in Romance
                         </div>
                         <p class="card-text">
-                          ZIM-ACDH &amp; Institut für Romanistik, Universität
+                          <span class="switchLang showLang" lang="de"
+                            >ZIM-ACDH &amp; Institut für Romanistik,
+                            Universität</span
+                          >
+                          <span class="switchLang" lang="en"
+                            >ZIM-ACDH &amp; Department of Romance Studies</span
+                          >
                           Graz
                         </p>
                       </div>
@@ -695,7 +855,12 @@
                           Digitale Edition Urfehdebücher der Stadt Basel
                         </div>
                         <p class="card-text">
-                          ZIM-ACDH &amp; Universität Basel
+                          <span class="switchLang showLang" lang="de"
+                            >ZIM-ACDH &amp; Universität Basel</span
+                          >
+                          <span class="switchLang" lang="en"
+                            >ZIM-ACDH &amp; University of Basel</span
+                          >
                         </p>
                       </div>
                     </a>
@@ -750,61 +915,118 @@
               </div> -->
 
               <div class="row">
-                <div class="col-lg-6">
-                  <div class="pe-lg-4">
-                    <p>
-                      <a
-                        href="https://chsteiner.github.io/"
-                        class="text-primary text-highlight-warning fw-bold"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Academic CV"
-                      >
-                        Christian Steiner</a
-                      >
-                      hat einen Masterabschluss in Übersetzen und
-                      Dolmetschen.<br />
-                      <a
-                        href="https://chpollin.github.io/"
-                        class="text-primary text-highlight-warning fw-bold"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Academic CV"
-                        >Christopher Pollin</a
-                      >
-                      hat einen Masterabschluss in Geschichte.
-                    </p>
+                <div class="switchLang showLang" lang="de">
+                  <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                      <p>
+                        <a
+                          href="https://chsteiner.github.io/"
+                          class="text-primary text-highlight-warning fw-bold"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Academic CV"
+                        >
+                          Christian Steiner</a
+                        >
+                        hat einen Masterabschluss in Übersetzen und
+                        Dolmetschen.<br />
+                        <a
+                          href="https://chpollin.github.io/"
+                          class="text-primary text-highlight-warning fw-bold"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Academic CV"
+                          >Christopher Pollin</a
+                        >
+                        hat einen Masterabschluss in Geschichte.
+                      </p>
 
-                    <p>
-                      Wir haben beide Masterabschlüsse in
-                      <b class="text-primary">Digital Humanities</b>.
-                    </p>
+                      <p>
+                        Wir haben beide Masterabschlüsse in
+                        <b class="text-primary">Digital Humanities</b>.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <!-- End Col -->
+                  <!-- End Col -->
 
-                <div class="col-lg-6">
-                  <div class="ps-lg-4">
-                    <p>
-                      Christian begann 2012 als wissenschaftlicher Mitarbeiter
-                      am
-                      <a
-                        href="//zim.uni-graz.at"
-                        class="text-primary text-highlight-warning fw-bold"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Zentrum für Informationsmodellierung (ZIM) an der
-                        Universität Graz
-                      </a>
-                      zu arbeiten. 2016 stieß Christopher dazu, der den gleichen
-                      Weg einschlug und ebenfalls wissenschaftlicher Mitarbeiter
-                      am gleichen Institut wurde.
-                    </p>
+                  <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                      <p>
+                        Christian begann 2012 als wissenschaftlicher Mitarbeiter
+                        am
+                        <a
+                          href="//zim.uni-graz.at"
+                          class="text-primary text-highlight-warning fw-bold"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Zentrum für Informationsmodellierung (ZIM) an der
+                          Universität Graz
+                        </a>
+                        zu arbeiten. 2016 stieß Christopher dazu, der den
+                        gleichen Weg einschlug und ebenfalls wissenschaftlicher
+                        Mitarbeiter am gleichen Institut wurde.
+                      </p>
+                    </div>
                   </div>
+                  <!-- End Col -->
                 </div>
-                <!-- End Col -->
+                <div class="switchLang" lang="en">
+                  <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                      <p>
+                        <a
+                          href="https://chsteiner.github.io/"
+                          class="text-primary text-highlight-warning fw-bold"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Academic CV"
+                          >Christian Steiner</a
+                        >
+                        holds a master's degree in Translation and
+                        Interpreting.<br />
+                        <a
+                          href="https://chpollin.github.io/"
+                          class="text-primary text-highlight-warning fw-bold"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Academic CV"
+                          >Christopher Pollin</a
+                        >
+                        holds a master's degree in History.
+                      </p>
+
+                      <p>
+                        Both of us completed joint master's degrees in
+                        <b class="text-primary">Digital Humanities</b>.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                      <p>
+                        Christian started working as a research assistant at the
+                        <a
+                          href="//zim.uni-graz.at"
+                          class="text-primary text-highlight-warning fw-bold"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Centre for Information Modelling (ZIM) at the
+                          University of Graz
+                        </a>
+                        in 2012, where he was joined by Christopher in 2016, who
+                        took the same path and became research assistant at the
+                        same institute.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- End Col -->
+                </div>
               </div>
+
               <!-- End Row -->
             </div>
           </div>
@@ -825,8 +1047,13 @@
         >
           <div class="col-md mb-3 mb-md-0">
             <h2 class="text-indigo">
-              Finden Sie Ihre persönliche Lösung und fragen Sie nach unseren
-              Angeboten.
+              <span class="switchLang showLang" lang="de"
+                >Finden Sie Ihre persönliche Lösung und fragen Sie nach unseren
+                Angeboten.</span
+              >
+              <span class="switchLang" lang="en"
+                >Find the right solution and get tailored pricing options.</span
+              >
             </h2>
           </div>
 
@@ -855,7 +1082,8 @@
               <a
                 class="btn btn-primary btn-transition"
                 href="mailto:office@dhcraft.org"
-                >Kontakt</a
+                ><span class="switchLang showLang" lang="de">Kontakt</span
+                ><span class="switchLang" lang="en">Contact us</span></a
               >
             </div>
           </div>
@@ -868,23 +1096,29 @@
         <!-- Content -->
         <div class="row">
           <div class="col-6 col-md-3 order-md-2 mb-7 mb-md-0">
-            <h5>Unternehmen</h5>
+            <h5>
+              <span class="switchLang showLang" lang="de">Unternehmen</span
+              ><span class="switchLang" lang="en">Company</span>
+            </h5>
 
             <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
               <li>
                 <a class="link link-sm link-secondary" href="#aboutSection"
-                  >Angebot</a
+                  ><span class="switchLang showLang" lang="de">Angebot</span
+                  ><span class="switchLang" lang="en">Services</span></a
                 >
               </li>
               <li>
                 <a class="link link-sm link-secondary" href="#pricingSection"
-                  >Preise</a
+                  ><span class="switchLang showLang" lang="de">Preise</span
+                  ><span class="switchLang" lang="en">Pricing</span></a
                 >
               </li>
               <li>
                 <a class="link link-sm link-secondary" href="#workSection"
-                  >Arbeit</a
+                  ><span class="switchLang showLang" lang="de">Arbeit</span
+                  ><span class="switchLang" lang="en">Work</span></a
                 >
               </li>
 
@@ -898,13 +1132,17 @@
           </div>
 
           <div class="col-6 col-md-3 order-md-3 mb-7 mb-md-0">
-            <h5>Rechtliches</h5>
+            <h5>
+              <span class="switchLang showLang" lang="de">Rechtliches</span
+              ><span class="switchLang" lang="en">Legal</span>
+            </h5>
 
             <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
               <li>
                 <a class="link link-sm link-secondary" href="imprint.html"
-                  >Impressum</a
+                  ><span class="switchLang showLang" lang="de">Impressum</span
+                  ><span class="switchLang" lang="en">Imprint</span></a
                 >
               </li>
               <!-- <li>
@@ -985,7 +1223,8 @@
                     data-bs-dropdown-animation
                   >
                     <span class="d-flex align-items-center">
-                      <span id="langButton">Sprache</span>
+                      <span class="switchLang showLang" lang="de">Sprache</span>
+                      <span class="switchLang" lang="en">Language</span>
                     </span>
                   </button>
 
@@ -995,13 +1234,15 @@
                   >
                     <a
                       class="dropdown-item d-flex align-items-center"
-                      href="index_en.html"
+                      href="#"
+                      onclick="switchLangToEN()"
                     >
                       <span>English</span>
                     </a>
                     <a
                       class="dropdown-item d-flex align-items-center"
-                      href="index.html"
+                      href="#"
+                      onclick="switchLangToDE()"
                     >
                       <span>Deutsch</span>
                     </a>
@@ -1279,14 +1520,51 @@
     <script>
       const changeLangPage = function () {
         var userLang = navigator.language || navigator.userLanguage;
+        var x = document.querySelectorAll(".switchLang");
 
         if (userLang.startsWith("de")) {
           return;
         } else {
-          window.location.href = "index_en.html";
+          //window.location.href = "";
+          x.forEach((p) => p.classList.toggle("show"));
+          document.documentElement.setAttribute("lang", "en");
+          document.querySelector("#aboutSectionLink").innerHTML = "Services";
+          document.querySelector("#pricingSectionLink").innerHTML = "Pricing";
+          document.querySelector("#workSectionLink").innerHTML = "Work";
+          document.querySelector("#footerLink").innerHTML = "Contact";
         }
       };
       changeLangPage();
+    </script>
+    <!-- Choose Language with select -->
+    <script>
+      function switchLangToDE() {
+        var x = document.querySelectorAll(".switchLang");
+        if (document.documentElement.lang === "de") {
+          return;
+        } else {
+          x.forEach((p) => p.classList.toggle("showLang"));
+          document.documentElement.setAttribute("lang", "de");
+          document.querySelector("#aboutSectionLink").innerHTML = "Angebot";
+          document.querySelector("#pricingSectionLink").innerHTML = "Preise";
+          document.querySelector("#workSectionLink").innerHTML = "Arbeit";
+          document.querySelector("#footerLink").innerHTML = "Kontakt";
+        }
+      }
+
+      function switchLangToEN() {
+        var x = document.querySelectorAll(".switchLang");
+        if (document.documentElement.lang === "en") {
+          return;
+        } else {
+          x.forEach((p) => p.classList.toggle("showLang"));
+          document.documentElement.setAttribute("lang", "en");
+          document.querySelector("#aboutSectionLink").innerHTML = "Services";
+          document.querySelector("#pricingSectionLink").innerHTML = "Pricing";
+          document.querySelector("#workSectionLink").innerHTML = "Work";
+          document.querySelector("#footerLink").innerHTML = "Contact";
+        }
+      }
     </script>
   </body>
 </html>

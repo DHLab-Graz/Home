@@ -1,0 +1,6 @@
+.switchLang {
+  display: none;
+}
+.switchLang.showLang {
+  display: inherit;
+}

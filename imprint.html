@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8" />
@@ -49,10 +49,12 @@
       href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css" />
-    <link rel="stylesheet" />
 
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="./assets/css/theme.min.css?v=1.0" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
 
   <body id="homeSection" class="position-relative">
@@ -60,15 +62,11 @@
     <header
       id="header"
       class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-sticky-top"
-      data-hs-header-options='{
-              "fixMoment": 1000,
-              "fixEffect": "slide"
-            }'
     >
       <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap">
           <!-- Default Logo -->
-          <a class="navbar-brand" href="index.html" aria-label="Front">
+          <a class="navbar-brand" href="./index.html" aria-label="Front">
             <img
               class="navbar-brand-logo"
               src="./assets/svg/logos/dhcraft_logo_invert.svg"
@@ -100,32 +98,40 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul id="navbarNavDropdownNav" class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html#homeSection"
-                  >Home</a
-                >
+                <a class="nav-link active" href="index.html##homeSection">Home</a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item switchLang showLang" lang="de">
                 <a class="nav-link" href="index.html#aboutSection">Angebot</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#pricingSection">Preise</a>
+              <li class="nav-item switchLang" lang="en">
+                <a class="nav-link" href="index.html#aboutSection">Services</a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item switchLang showLang" lang="de">
+                <a class="nav-link" href="index.html#pricingSection">Preise</a>
+              </li>
+              <li class="nav-item switchLang" lang="en">
+                <a class="nav-link" href="index.html#pricingSection">Pricing</a>
+              </li>
+
+              <li class="nav-item switchLang showLang" lang="de">
                 <a class="nav-link" href="index.html#workSection">Arbeit</a>
+              </li>
+              <li class="nav-item switchLang" lang="en">
+                <a class="nav-link" href="index.html#workSection">Work</a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="index.html#teamSection">Team</a>
               </li>
 
-              <!-- Button -->
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Kontakt</a>
+              <li class="nav-item switchLang showLang" lang="de">
+                <a class="nav-link" href="index.html#footer">Kontakt</a>
               </li>
-              <!-- End Button -->
+              <li class="nav-item switchLang" lang="en">
+                <a class="nav-link" href="index.html#footer">Contact</a>
+              </li>
             </ul>
           </div>
           <!-- End Collapse -->
@@ -138,47 +144,92 @@
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
       <!-- Content -->
-      <div class="container content-space-2 content-space-lg-3">
-        <!-- Card -->
-        <div class="card card-lg">
-          <!-- Header -->
-          <div class="card-header bg-primary bg-gradient py-sm-10">
-            <h1 class="card-title h2 text-white">Imprint</h1>
-            <p class="card-text text-white">Digital Humanities Craft OG</p>
+      <div class="switchLang showLang" lang="de">
+        <div class="container content-space-2 content-space-lg-3">
+          <!-- Card -->
+          <div class="card card-lg">
+            <!-- Header -->
+            <div class="card-header bg-primary bg-gradient py-sm-10">
+              <h1 class="card-title h2 text-white">Impressum</h1>
+              <p class="card-text text-white">Digital Humanities Craft OG</p>
+            </div>
+            <!-- End Header -->
+
+            <!-- Card Body -->
+            <div class="card-body">
+              <p>
+                Hönigtaler Straße 1 / 1<br />
+                8010 Kainbach bei Graz<br />
+                Telefon: +43 678 12 69 242<br />
+                E-Mail: office@dhcraft.org<br />
+                Web: https://dhcraft.org
+              </p>
+
+              <p>
+                <span class="fw-bold">Firmenbuchnummer</span>: 573227g<br />
+                <span class="fw-bold">Firmengericht</span>: Landesgericht für
+                Zivilsachen Graz, Marburger Kai 49, 8010 Graz<br />
+                <span class="fw-bold">UID</span>: ATU77781928<br />
+                <span class="fw-bold">Unternehmensgegenstand</span>:
+                Dienstleistungen in der automatischen Datenverarbeitung und
+                Informationstechnik<br />
+                <span class="fw-bold">Rechtsform</span>: Offene Gesellschaft
+              </p>
+
+              <p>
+                <a
+                  href="https://www.wkoecg.at/Ecg.aspx?FirmaID=9636d72a-a61d-483f-9303-3c4f87630a63"
+                  ><img src="./assets/img/ecg.png"
+                /></a>
+              </p>
+            </div>
+            <!-- End Card Body -->
           </div>
-          <!-- End Header -->
-
-          <!-- Card Body -->
-          <div class="card-body">
-            <p>
-              Hönigtaler Straße 1 / 1<br />
-              8010 Kainbach bei Graz<br />
-              Telefon: +43 678 12 69 242<br />
-              E-Mail: office@dhcraft.org<br />
-              Web: https://dhcraft.org
-            </p>
-
-            <p>
-              <span class="fw-bold">Firmenbuchnummer</span>: 573227g<br />
-              <span class="fw-bold">Firmengericht</span>: Landesgericht für
-              Zivilsachen Graz, Marburger Kai 49, 8010 Graz<br />
-              <span class="fw-bold">UID</span>: ATU77781928<br />
-              <span class="fw-bold">Unternehmensgegenstand</span>:
-              Dienstleistungen in der automatischen Datenverarbeitung und
-              Informationstechnik<br />
-              <span class="fw-bold">Rechtsform</span>: Offene Gesellschaft
-            </p>
-
-            <p>
-              <a
-                href="https://www.wkoecg.at/Ecg.aspx?FirmaID=9636d72a-a61d-483f-9303-3c4f87630a63"
-                ><img src="./assets/img/ecg.png"
-              /></a>
-            </p>
-          </div>
-          <!-- End Card Body -->
+          <!-- End Card -->
         </div>
-        <!-- End Card -->
+      </div>
+      <div class="switchLang" lang="en">
+        <div class="container content-space-2 content-space-lg-3">
+            <!-- Card -->
+            <div class="card card-lg">
+              <!-- Header -->
+              <div class="card-header bg-primary bg-gradient py-sm-10">
+                <h1 class="card-title h2 text-white">Imprint</h1>
+                <p class="card-text text-white">Digital Humanities Craft OG</p>
+              </div>
+              <!-- End Header -->
+
+              <!-- Card Body -->
+              <div class="card-body">
+                <p>
+                  Hönigtaler Straße 1 / 1<br />
+                  8010 Kainbach bei Graz<br />
+                  Phone: +43 678 12 69 242<br />
+                  E-Mail: office@dhcraft.org<br />
+                  Web: https://dhcraft.org
+                </p>
+
+                <p>
+                  <span class="fw-bold">Company Number</span>: 573227g<br />
+                  <span class="fw-bold">Competent Court</span>: Landesgericht für
+                  Zivilsachen Graz, Marburger Kai 49, 8010 Graz<br />
+                  <span class="fw-bold">UID</span>: ATU77781928<br />
+                  <span class="fw-bold">Line of business</span>: IT services in
+                  automatic data processing and information technology<br />
+                  <span class="fw-bold">Legal form</span>: Offene Gesellschaft
+                </p>
+
+                <p>
+                  <a
+                    href="https://www.wkoecg.at/Ecg.aspx?FirmaID=9636d72a-a61d-483f-9303-3c4f87630a63"
+                    ><img src="./assets/img/ecg.png"
+                  /></a>
+                </p>
+              </div>
+              <!-- End Card Body -->
+            </div>
+            <!-- End Card -->
+          </div>
       </div>
       <!-- End Content -->
     </main>
@@ -193,8 +244,13 @@
         >
           <div class="col-md mb-3 mb-md-0">
             <h2 class="text-indigo">
-              Finden Sie Ihre persönliche Lösung und fragen Sie nach unseren
-              Angeboten.
+              <span class="switchLang showLang" lang="de"
+                >Finden Sie Ihre persönliche Lösung und fragen Sie nach unseren
+                Angeboten.</span
+              >
+              <span class="switchLang" lang="en"
+                >Find the right solution and get tailored pricing options.</span
+              >
             </h2>
           </div>
 
@@ -223,7 +279,8 @@
               <a
                 class="btn btn-primary btn-transition"
                 href="mailto:office@dhcraft.org"
-                >Kontakt</a
+                ><span class="switchLang showLang" lang="de">Kontakt</span
+                ><span class="switchLang" lang="en">Contact us</span></a
               >
             </div>
           </div>
@@ -236,36 +293,34 @@
         <!-- Content -->
         <div class="row">
           <div class="col-6 col-md-3 order-md-2 mb-7 mb-md-0">
-            <h5>Unternehmen</h5>
+            <h5>
+              <span class="switchLang showLang" lang="de">Unternehmen</span
+              ><span class="switchLang" lang="en">Company</span>
+            </h5>
 
             <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
               <li>
-                <a
-                  class="link link-sm link-secondary"
-                  href="index.html#aboutSection"
-                  >Angebot</a
+                <a class="link link-sm link-secondary" href="index.html#aboutSection"
+                  ><span class="switchLang showLang" lang="de">Angebot</span
+                  ><span class="switchLang" lang="en">Services</span></a
                 >
               </li>
               <li>
-                <a
-                  class="link link-sm link-secondary"
-                  href="index.html#pricingSection"
-                  >Preise</a
+                <a class="link link-sm link-secondary" href="index.html#pricingSection"
+                  ><span class="switchLang showLang" lang="de">Preise</span
+                  ><span class="switchLang" lang="en">Pricing</span></a
                 >
               </li>
               <li>
-                <a
-                  class="link link-sm link-secondary"
-                  href="index.html#workSection"
-                  >Arbeit</a
+                <a class="link link-sm link-secondary" href="index.html#workSection"
+                  ><span class="switchLang showLang" lang="de">Arbeit</span
+                  ><span class="switchLang" lang="en">Work</span></a
                 >
               </li>
 
               <li>
-                <a
-                  class="link link-sm link-secondary"
-                  href="index.html#teamSection"
+                <a class="link link-sm link-secondary" href="index.html#teamSection"
                   >Team</a
                 >
               </li>
@@ -274,13 +329,17 @@
           </div>
 
           <div class="col-6 col-md-3 order-md-3 mb-7 mb-md-0">
-            <h5>Rechtliches</h5>
+            <h5>
+              <span class="switchLang showLang" lang="de">Rechtliches</span
+              ><span class="switchLang" lang="en">Legal</span>
+            </h5>
 
             <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
               <li>
                 <a class="link link-sm link-secondary" href="imprint.html"
-                  >Impressum</a
+                  ><span class="switchLang showLang" lang="de">Impressum</span
+                  ><span class="switchLang" lang="en">Imprint</span></a
                 >
               </li>
               <!-- <li>
@@ -296,7 +355,7 @@
             <!-- Logo -->
             <a
               class="d-inline-flex align-items-center"
-              href="index.html#homeSection"
+              href="#homeSection"
               aria-label="Dh Craft"
             >
               <img
@@ -361,7 +420,8 @@
                     data-bs-dropdown-animation
                   >
                     <span class="d-flex align-items-center">
-                      <span id="langButton">Sprache</span>
+                      <span class="switchLang showLang" lang="de">Sprache</span>
+                      <span class="switchLang" lang="en">Language</span>
                     </span>
                   </button>
 
@@ -371,13 +431,15 @@
                   >
                     <a
                       class="dropdown-item d-flex align-items-center"
-                      href="index_en.html"
+                      href="#"
+                      onclick="switchLangToEN()"
                     >
                       <span>English</span>
                     </a>
                     <a
                       class="dropdown-item d-flex align-items-center"
-                      href="index.html"
+                      href="#"
+                      onclick="switchLangToDE()"
                     >
                       <span>Deutsch</span>
                     </a>
@@ -485,6 +547,8 @@
 
     <!-- JS Implementing Plugins -->
     <script src="./assets/js/vendor.min.js"></script>
+    <script src="./assets/vendor/aos/dist/aos.js"></script>
+    <!-- <script src="./node_modules/shufflejs/dist/shuffle.js"></script> -->
 
     <!-- JS Front -->
     <script src="./assets/js/theme.min.js"></script>
@@ -496,17 +560,12 @@
         // =======================================================
         new HSHeader("#header").init();
 
-        // INITIALIZATION OF MEGA MENU
-        // =======================================================
-        new HSMegaMenu(".js-mega-menu", {
-          desktop: {
-            position: "left",
-          },
-        });
-
         // INITIALIZATION OF SHOW ANIMATIONS
         // =======================================================
         new HSShowAnimation(".js-animation-link");
+
+        // INITIALIZATION OF BOOTSTRAP DROPDOWN
+        HSBsDropdown.init();
 
         // INITIALIZATION OF BOOTSTRAP VALIDATION
         // =======================================================
@@ -517,14 +576,179 @@
           },
         });
 
-        // INITIALIZATION OF BOOTSTRAP DROPDOWN
-        // =======================================================
-        HSBsDropdown.init();
-
         // INITIALIZATION OF GO TO
         // =======================================================
         new HSGoTo(".js-go-to");
+
+        // INITIALIZATION OF AOS
+        // =======================================================
+        AOS.init({
+          duration: 650,
+          once: true,
+        });
+
+        // INITIALIZATION OF TEXT ANIMATION (TYPING)
+        // =======================================================
+        HSCore.components.HSTyped.init(".js-typedjs");
+
+        // SCROLLSPY
+        // =======================================================
+        new bootstrap.ScrollSpy(document.body, {
+          target: "#navbarNavDropdownNav",
+        });
+
+        new HSScrollspy("#navbarNavDropdown", {
+          breakpoint: "lg",
+          scrollOffset: 20,
+        });
+
+        // INITIALIZATION OF BOOTSTRAP VALIDATION
+        // =======================================================
+        HSBsValidation.init(".js-validate", {
+          onSubmit: (data) => {
+            data.event.preventDefault();
+            alert("Submited");
+          },
+        });
+
+        // INITIALIZATION OF SWIPER
+        // =======================================================
+        var swiper = new Swiper(".js-swiper-card-blocks", {
+          slidesPerView: 1,
+          pagination: {
+            el: ".js-swiper-card-blocks-pagination",
+            dynamicBullets: true,
+            clickable: true,
+          },
+          breakpoints: {
+            620: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+          },
+        });
+
+        // INITIALIZATION OF NAV SCROLLER
+        // =======================================================
+        // new HsNavScroller(".js-nav-scroller");
+
+        // INITIALIZATION OF CLIPBOARD JS
+        // =======================================================
+        let clipboard = new ClipboardJS(".copyToClipboard");
+
+        clipboard.on("success", function (e) {
+          e.trigger.title = "Copied";
+          e.trigger.firstElementChild.className = "bi bi-check2";
+
+          e.clearSelection();
+
+          const clipboardTimeout = setTimeout(changeBackClipboard, 2500);
+
+          function changeBackClipboard() {
+            var title = (document.getElementById("copyToClipboard").title =
+              "Copy to clipboard");
+            var icon = (document.getElementById(
+              "copyToClipboard"
+            ).firstElementChild.className = "bi bi-clipboard");
+          }
+        });
+
+        // INITIALIZATION OF SHUFFLE
+        // =======================================================
+        // class ShufflePorfolio {
+        //   constructor(element) {
+        //     this.element = element;
+        //     this.shuffle = new Shuffle(element, {
+        //       itemSelector: ".js-shuffle-item",
+        //       speed: 500,
+        //     });
+
+        //     this.addFilterButtons();
+        //   }
+
+        //   addFilterButtons() {
+        //     const options = document.querySelector(".js-filter-options");
+        //     if (!options) {
+        //       return;
+        //     }
+
+        //     const filterButtons = Array.from(options.children);
+        //     const onClick = this._handleFilterClick.bind(this);
+        //     filterButtons.forEach((button) => {
+        //       button.addEventListener("click", onClick, false);
+        //     });
+        //   }
+
+        //   _handleFilterClick(evt) {
+        //     const btn = evt.currentTarget.firstElementChild;
+        //     const isActive = btn.classList.contains("active");
+        //     const btnGroup = btn.getAttribute("data-group");
+
+        //     this._removeActiveClassFromChildren(btn.parentNode.parentNode);
+
+        //     let filterGroup;
+        //     if (isActive) {
+        //       btn.classList.remove("active");
+        //       filterGroup = Shuffle.ALL_ITEMS;
+        //     } else {
+        //       btn.classList.add("active");
+        //       filterGroup = btnGroup;
+        //     }
+
+        //     this.shuffle.filter(filterGroup);
+        //   }
+
+        //   _removeActiveClassFromChildren(parent) {
+        //     const { children } = parent;
+        //     for (let i = children.length - 1; i >= 0; i--) {
+        //       children[i].firstElementChild.classList.remove("active");
+        //     }
+        //   }
+        // }
+
+        // new ShufflePorfolio(document.querySelector(".js-shuffle"));
       })();
+    </script>
+    <!-- Choose language according to Browser Settings -->
+    <script>
+      const changeLangPage = function () {
+        var userLang = navigator.language || navigator.userLanguage;
+        var x = document.querySelectorAll(".switchLang");
+
+        if (userLang.startsWith("de")) {
+          return;
+        } else {
+          //window.location.href = "";
+          x.forEach((p) => p.classList.toggle("show"));
+          document.documentElement.setAttribute("lang", "en");
+        }
+      };
+      changeLangPage();
+    </script>
+    <script>
+      function switchLangToDE() {
+        var x = document.querySelectorAll(".switchLang");
+        if (document.documentElement.lang === "de") {
+          return;
+        } else {
+          x.forEach((p) => p.classList.toggle("showLang"));
+          document.documentElement.setAttribute("lang", "de");
+        }
+      }
+
+      function switchLangToEN() {
+        var x = document.querySelectorAll(".switchLang");
+        if (document.documentElement.lang === "en") {
+          return;
+        } else {
+          x.forEach((p) => p.classList.toggle("showLang"));
+          document.documentElement.setAttribute("lang", "en");
+        }
+      }
     </script>
   </body>
 </html>
