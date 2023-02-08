@@ -37,7 +37,10 @@
     <title>Digital Humanities Craft</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 
     <!-- Font -->
     <link href="./assets/fonts/fonts.css" rel="stylesheet" />
@@ -156,7 +159,7 @@
         class="container position-relative content-space-t-3 content-space-t-md-4 content-space-t-lg-4"
       >
         <div class="row justify-content-lg-between align-items-lg-center">
-          <div class="col-8">
+          <div class="col col-lg-8">
             <!-- Heading -->
             <div class="mb-7 text-center">
               <h1 class="display-4 mb-3">Digital Humanities Craft</h1>
@@ -196,7 +199,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 d-none d-lg-block">
             <img
               class="img-fluid"
               src="./assets/svg/logos/dhcraft_logo_invert.svg"
@@ -893,108 +896,30 @@
         </div>
         <!-- End Heading -->
         <div class="mb-7">
-
-            <!-- <div class="position-relative">
+          <!-- <div class="position-relative">
               <img
                 class="img-fluid rounded-2"
                 src="./assets/img/colorsplash.png"
                 alt="Image Description"
               />
             </div> -->
-            <img
-              class="card-img rounded-2"
-              src="./assets/img/colorsplash.png"
-              alt="Image Description"
-            />
-            <div class="card card-sm text-center mt-n7 mx-3">
-              <div class="card-body">
-                <h4 class="card-title">
-                  Christopher Pollin &amp; Christian Steiner
-                </h4>
-                <p class="card-text">Founders / CEO</p>
-              </div>
-
+          <img
+            class="card-img rounded-2"
+            src="./assets/img/colorsplash.png"
+            alt="Image Description"
+          />
+          <div class="card card-sm text-center mt-n7 mx-3">
+            <div class="card-body">
+              <h4 class="card-title">
+                Christian Steiner &amp; Christopher Pollin
+              </h4>
+              <p class="card-text">Founders / CEO</p>
+            </div>
           </div>
           <!-- End Col -->
         </div>
         <!-- End Row -->
         <div class="row">
-          <div class="col-6 mb-3">
-            <!-- Card -->
-            <div class="card card-transition h-100">
-              <div class="card-body">
-                <div class="avatar avatar-lg avatar-circle mb-4">
-                  <img
-                    class="avatar-img"
-                    src="./assets/img/christopher-solo-website.png"
-                    alt="Image Description"
-                  />
-                </div>
-                <h4 class="card-title">Christopher Pollin</h4>
-                <p class="card-text switchLang showLang" lang="de">
-                  hat einen Masterabschluss in Geschichte und Digital Humanities. Seit 2016 wissenschaftlicher Mitarbeiter am <a
-                  href="//zim.uni-graz.at"
-                  class="text-primary text-highlight-warning fw-bold"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Zentrum für Informationsmodellierung (ZIM) an der
-                  Universität Graz
-                </a>.
-                </p>
-                <p class="card-text switchLang" lang="en">
-                  holds a master's degree in History and Digital Humanities. Since 2016 research assistant at the
-                  <a
-                    href="//zim.uni-graz.at"
-                    class="text-primary text-highlight-warning fw-bold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Centre for Information Modelling (ZIM) at the
-                    University of Graz
-                  </a>.
-                </p>
-              </div>
-
-              <div class="card-footer pt-0">
-                <!-- Socials -->
-                <ul class="list-inline mb-0">
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="mailto:christopher.pollin@dhcraft.org" title="E-Mail"
-                    >
-                      <i class="bi-envelope"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://chpollin.github.io/" target="_blank"
-                      rel="noopener noreferrer"
-                      title="Academic CV"
-                    >
-                      <i class="bi-house"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://twitter.com/LurchPollin" target="_blank"
-                      rel="noopener noreferrer"
-                      title="Twitter"
-                    >
-                      <i class="bi-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
-                <!-- End Socials -->
-              </div>
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Col -->
-
           <div class="col-6 mb-3">
             <!-- Card -->
             <div class="card card-transition h-100">
@@ -1008,25 +933,29 @@
                 </div>
                 <h4 class="card-title">Christian Steiner</h4>
                 <p class="card-text switchLang showLang" lang="de">
-                  hat einen Masterabschluss in Übersetzen/Dolmetschen und Digital Humanities. Seit 2012 wissenschaftlicher Mitarbeiter am <a
-                  href="//zim.uni-graz.at"
-                  class="text-primary text-highlight-warning fw-bold"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ZIM
-                </a>.
-                </p>
-                <p class="card-text switchLang" lang="en">
-                  holds a master's degree in Translation/Interpreting and Digital Humanities. Since 2012 research assistant at the
+                  hat einen Masterabschluss in Übersetzen/Dolmetschen und
+                  Digital Humanities. Seit 2012 wissenschaftlicher Mitarbeiter
+                  am
                   <a
                     href="//zim.uni-graz.at"
                     class="text-primary text-highlight-warning fw-bold"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    ZIM
-                  </a>.
+                    ZIM </a
+                  >.
+                </p>
+                <p class="card-text switchLang" lang="en">
+                  holds a master's degree in Translation/Interpreting and
+                  Digital Humanities. Since 2012 research assistant at the
+                  <a
+                    href="//zim.uni-graz.at"
+                    class="text-primary text-highlight-warning fw-bold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ZIM </a
+                  >.
                 </p>
               </div>
 
@@ -1036,7 +965,8 @@
                   <li class="list-inline-item">
                     <a
                       class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="mailto:christian.steiner@dhcraft.org" title="E-Mail"
+                      href="mailto:christian.steiner@dhcraft.org"
+                      title="E-Mail"
                     >
                       <i class="bi-envelope"></i>
                     </a>
@@ -1044,7 +974,8 @@
                   <li class="list-inline-item">
                     <a
                       class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://chsteiner.github.io/" target="_blank"
+                      href="https://chsteiner.github.io/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       title="Academic CV"
                     >
@@ -1054,7 +985,88 @@
                   <li class="list-inline-item">
                     <a
                       class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://twitter.com/Chris_Traube" target="_blank"
+                      href="https://twitter.com/Chris_Traube"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Twitter"
+                    >
+                      <i class="bi-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End Socials -->
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+          <div class="col-6 mb-3">
+            <!-- Card -->
+            <div class="card card-transition h-100">
+              <div class="card-body">
+                <div class="avatar avatar-lg avatar-circle mb-4">
+                  <img
+                    class="avatar-img"
+                    src="./assets/img/christopher-solo-website.png"
+                    alt="Image Description"
+                  />
+                </div>
+                <h4 class="card-title">Christopher Pollin</h4>
+                <p class="card-text switchLang showLang" lang="de">
+                  hat einen Masterabschluss in Geschichte und Digital
+                  Humanities. Seit 2016 wissenschaftlicher Mitarbeiter am
+                  <a
+                    href="//zim.uni-graz.at"
+                    class="text-primary text-highlight-warning fw-bold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Zentrum für Informationsmodellierung (ZIM) an der
+                    Universität Graz </a
+                  >.
+                </p>
+                <p class="card-text switchLang" lang="en">
+                  holds a master's degree in History and Digital Humanities.
+                  Since 2016 research assistant at the
+                  <a
+                    href="//zim.uni-graz.at"
+                    class="text-primary text-highlight-warning fw-bold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Centre for Information Modelling (ZIM) at the University of
+                    Graz </a
+                  >.
+                </p>
+              </div>
+
+              <div class="card-footer pt-0">
+                <!-- Socials -->
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-outline-primary btn-xs btn-icon rounded"
+                      href="mailto:christopher.pollin@dhcraft.org"
+                      title="E-Mail"
+                    >
+                      <i class="bi-envelope"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-outline-primary btn-xs btn-icon rounded"
+                      href="https://chpollin.github.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Academic CV"
+                    >
+                      <i class="bi-house"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-outline-primary btn-xs btn-icon rounded"
+                      href="https://twitter.com/LurchPollin"
+                      target="_blank"
                       rel="noopener noreferrer"
                       title="Twitter"
                     >
