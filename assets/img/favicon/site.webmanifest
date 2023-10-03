@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "DH Craft",
+    "short_name": "DH Craft",
     "icons": [
         {
             "src": "/assets/img/favicon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#442323",
-    "background_color": "#442323",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
