@@ -746,29 +746,688 @@
         class="bg-light rounded-2 content-space-1 content-space-lg-2"
         id="workSection"
       >
-        <div
-          class="container-xl container-fluid content-space-1 content-space-md-2 px-4 px-md-8 px-lg-10"
-        >
-          <div class="px-3">
-            <!-- Heading -->
-            <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
-              <!-- <span class="text-cap text-dark-70">Success stories</span> -->
-              <h1>
-                <span class="switchLang showLang" lang="de"
-                  >Eine Auswahl unserer abgeschlossenen Projekte</span
-                ><span class="switchLang" lang="en"
-                  >A selection of our projects</span
-                >
-              </h1>
-            </div>
-            <!-- End Heading -->
+        <div class="container-xl container-fluid">
+          <!-- Heading -->
+          <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
+            <!-- <span class="text-cap text-dark-70">Success stories</span> -->
+            <h1>
+              <span class="switchLang showLang" lang="de"
+                >Eine Auswahl unserer Arbeit</span
+              ><span class="switchLang" lang="en">A selection of our work</span>
+            </h1>
+          </div>
+          <!-- End Heading -->
+          <div class="container content-space-b-1 content-space-b-lg-1">
+            <!-- Nav Scroller -->
+            <div class="js-nav-scroller hs-nav-scroller-horizontal mb-7">
+              <span class="hs-nav-scroller-arrow-prev" style="display: none">
+                <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                  <i class="bi-chevron-left"></i>
+                </a>
+              </span>
 
-            <!-- Swiper Slider -->
-            <div class="js-swiper-card-blocks swiper swiper-equal-height">
+              <span class="hs-nav-scroller-arrow-next" style="display: none">
+                <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                  <i class="bi-chevron-right"></i>
+                </a>
+              </span>
+
+              <!-- Nav -->
+              <ul
+                class="js-filter-options nav nav-segment nav-pills d-flex mx-auto"
+                style="max-width: 50rem"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="javascript:;"
+                    data-group="all"
+                    >Alle</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="edition"
+                    >Digitale Edition</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="archive"
+                    >Digitales Archiv</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="software"
+                    >Software</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="teaching"
+                    >Lehre</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="workshop"
+                    >Workshop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="javascript:;"
+                    data-group="workshop-agki"
+                    >Generative KI</a
+                  >
+                </li>
+              </ul>
+              <!-- End Nav -->
+            </div>
+            <!-- End Nav Scroller -->
+
+            <div class="js-shuffle row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div class="js-shuffle-item col mb-5" data-groups='["archive"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:exil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/exil.jpg"
+                    alt="Exil:Trans"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">Exil:Trans</h3>
+                    <span class="card-subtitle text-body"
+                      >DH Craft &amp; Universität Wien, Zentrum für
+                      Translationswissenschaft</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="js-shuffle-item col mb-5" data-groups='["archive"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:szd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/szd.jpg"
+                    alt="Stefan Zweig Digital"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">Stefan Zweig Digital</h3>
+                    <span class="card-subtitle text-body"
+                      >DH Craft &amp; ZIM-ACDH &amp; Literaturarchiv
+                      Salzburg</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["software", "edition"]'
+              >
+                <a
+                  class="card card-transition"
+                  href="https://digedtnt.github.io/about/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/digedtnt.jpg"
+                    alt="DigEdTnt"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      DigEdTnT: Digital Edition Creation Pipelines: Tools and
+                      Transitions
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >DH Craft &amp; ZIM-ACDH</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["software"]'>
+                <a
+                  class="card card-transition"
+                  href="https://patrimonium.huma-num.fr/atlas/editor/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/fercan.jpg"
+                    alt="Fercan"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Patrimonium Editor Customisation for FERCAN
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >DH Craft &amp; Universität Graz, Institut für
+                      Antike</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <!-- End Col -->
+              <div class="js-shuffle-item col mb-5" data-groups='["edition"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:corema"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/corema.jpg"
+                    alt="Cooking Recipes of the Middle Ages"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      CoReMA - Cooking Recipes of the Middle Ages
+                    </h3>
+                    <span class="card-subtitle text-body">ZIM-ACDH</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="js-shuffle-item col mb-5" data-groups='["edition"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:cantus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/cantus.jpg"
+                    alt="Cantus Network"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Cantus Network - libri ordinarii of the Salzburg
+                      metropolitan province
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >ZIM-ACDH &amp; Österreichische Akademie der
+                      Wissenschaften</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="js-shuffle-item col mb-5" data-groups='["edition"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:depcha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/depcha.jpg"
+                    alt="Digital Edition Publishing Cooperative for Historical Accounts"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Digital Edition Publishing Cooperative for Historical
+                      Accounts
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >ZIM-ACDH &amp; University of Virginia</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["edition"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:ufbas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/ufbas.jpg"
+                    alt="Digitale Edition Urfehdebücher der Stadt Basel"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Digitale Edition Urfehdebücher der Stadt Basel
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >ZIM-ACDH &amp; Universität Basel</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["edition"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:aaif"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/aaif.jpg"
+                    alt="Adjective-Adverb Interfaces in Romance"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Adjective-Adverb Interfaces in Romance
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >ZIM-ACDH &amp; Institut für Romanistik, Universität
+                      Graz</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["workshop"]'>
+                <a
+                  class="card card-transition"
+                  href="https://docs.google.com/presentation/d/1hmPFgevNWcZRtQ1KdOvxyM4jTfwefuabBsAHynwJ6Fw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/workshop-lod-rostock.jpg"
+                    alt="Workshop"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Semantic Web, Linked Open Data, Digital Editions.
+                      Introduction to LOD: From Digital Scholarly Editions and
+                      Text Collections to the Web of Data
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshop: DH Craft &amp; Universität Rostock</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["workshop"]'>
+                <a
+                  class="card card-transition"
+                  href="https://docs.google.com/presentation/d/1j-BhMfTEvWijSkutrMG9yEVd1fAMeho9TsiNJAufpBg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/workshop-de-saarbruecken.jpg"
+                    alt="Workshop"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Workflow: Digitale Edition - Editionsprojekt der Exempla
+                      des Valerius Maximus
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshop: DH Craft &amp; Universität des Saarlandes</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["workshop"]'>
+                <a
+                  class="card card-transition"
+                  href="https://github.com/DigitalHumanitiesCraft/XSLT-Toolgallery"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/xslt.jpg"
+                    alt="XSLT Toolgallery"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      ACDH-CH Tool Gallery 9.1 – XSLT für Digital Humanists
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshop: DH Craft &amp; Österreichische Akademie der
+                      Wissenschaften, ACDH-CH</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["workshop"]'>
+                <a
+                  class="card card-transition"
+                  href="https://docs.google.com/presentation/d/17QrDqIVVFtxc7_AMzSI8zGGMyMGS21DB8ciWEg1OCXE/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/github.jpg"
+                    alt="XSLT Toolgallery"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Git und GitHub im Kontext von DH-Projekten
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshop: DH Craft &amp; Klassik Stiftung Weimar</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["teaching"]'>
+                <a
+                  class="card card-transition"
+                  href="https://docs.google.com/presentation/d/1hhgIXnP8odvW5uRVpkRsb-Ohj8RFqLCe5jYoxiz3RRY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/vsd-krems.jpg"
+                    alt="VSD Krems"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Vernetzung von Sammlungen und Datenaggregation
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Lehre: Digitales Kuratieren in Museen und
+                      Sammlungsinstitutionen. 2022/23. DH Craft &amp;
+                      Universität für Weiterbildung Krems</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["teaching"]'>
+                <a
+                  class="card card-transition"
+                  href="https://docs.google.com/presentation/d/1UBn-9Y0bPw0g46Xv42GwiQq0H20IBgXukE3gi-EE9RY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/data-steward.jpg"
+                    alt="Data Steward"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">Processing and Cleansing Data</h3>
+                    <span class="card-subtitle text-body"
+                      >Lehre: Certificate Course Data Steward. 2022/23. DH Craft
+                      &amp; Universität Wien</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="js-shuffle-item col mb-5" data-groups='["teaching"]'>
+                <a
+                  class="card card-transition"
+                  href="https://docs.google.com/presentation/d/11PAq52of5siHNYDwC7ksu5S-7EzJKFB1rcxSOlqe3Z8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/data-lib.jpg"
+                    alt="Data Librarian"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      "Daten - Information - Wissen" und Datenmodellierung
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Lehre: Certificate Course Data Librarian. 2022/23. DH
+                      Craft &amp; Universität Wien</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="workshop-pages/workshop1.html"
+                  class="card card-transition text-decoration-none"
+                >
+                  <img
+                    src="../assets/img/work-gallery/AGKI-RDF-Creation.jpg"
+                    class="card-img-top"
+                    alt="Workshop 1"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Erzeugung und Modellierung von RDF-Daten
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshopreihe AGKI: Donnerstag, 15.06., 10:00 - 11:00,
+                      ZIM-ACDH</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="workshop-pages/workshop2.html"
+                  class="card card-transition text-decoration-none disabled"
+                >
+                  <img
+                    src="../assets/img/work-gallery/AGKI-DigitalEdition-Text-TEI-HSA.jpg"
+                    class="card-img-top"
+                    alt="Workshop 2"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Digitale Edition und TEI: Unstrukturierter Text nach TEI
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshopreihe AGKI: Donnerstag, 22.06., 10:00 - 11:00,
+                      ZIM-ACDH
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="workshop-pages/workshop3.html"
+                  class="card card-transition text-decoration-none disabled"
+                >
+                  <img
+                    src="../assets/img/work-gallery/AGKI-DataStory-ExilTrans.jpg"
+                    class="card-img-top"
+                    alt="Workshop 3"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Datenvisualisierung und Data Stories: Analyse
+                      biographischer Daten von ins Exil geflüchteten
+                      Übersetzer*innen mit Python und Jupyter Notebook
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshopreihe AGKI: Donnerstag, 29.06., 10:00 - 11:00,
+                      ZIM-ACDH
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="workshop-pages/workshop4.html"
+                  class="card card-transition text-decoration-none"
+                >
+                  <img
+                    src="../assets/img/work-gallery/AGKI-ChatGPT-4-Advanced-Data-Analysis.jpg"
+                    class="card-img-top"
+                    alt="Workshop 4"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Generieren. Transformieren. Analysieren. Visualisieren.
+                      ChatGPT-4 Advanced Data Analysis
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshopreihe AGKI: Montag, 02.10., 12:00 - 13:00,
+                      ZIM-ACDH</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="workshop-pages/workshop5.html"
+                  class="card card-transition text-decoration-none"
+                >
+                  <img
+                    src="../assets/img/work-gallery/AGKI-PromptEngineering.jpg"
+                    class="card-img-top"
+                    alt="Workshop 5"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Einführung in das Prompt Engineering
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshopreihe AGKI: Montag, 09.10., 12:00 - 13:00,
+                      ZIM-ACDH</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="workshop-pages/workshop6.html"
+                  class="card card-transition text-decoration-none"
+                >
+                  <img
+                    src="../assets/img/work-gallery/AGKI-Text-to-Image-Midjourney-DALL-E3.jpg"
+                    class="card-img-top"
+                    alt="Workshop 6"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Text to Image. Midjourney und DALL-E 3
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Workshopreihe AGKI: Montag, 16.10., 12:00 - 13:00,
+                      ZIM-ACDH</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="https://docs.google.com/presentation/d/1wilgLV1mm8xria4yvaUkghiO7G534JyxRjjR45RkMWw/edit?usp=sharing"
+                  class="card card-transition text-decoration-none"
+                >
+                  <img
+                    src="../assets/img/work-gallery/FORGE23.jpg"
+                    class="card-img-top"
+                    alt="FORGE23"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      New Ways of Creating Research Data: Conversion of
+                      Unstructured Text to TEI XML using GPT on the
+                      Correspondence of Hugo Schuchardt with a Web Prototype for
+                      Prompt Engineering
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >FORGE 2023. 06.10.2023. Universität Tübingen</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="https://docs.google.com/presentation/d/1MyXeM9KUujHVy3dFgCMDQxkTpkcta84_0cMo2uPsOTQ/edit?usp=sharing"
+                  class="card card-transition text-decoration-none"
+                >
+                  <img
+                    src="../assets/img/work-gallery/GPT-PromptEngineering-Workshop-PM.jpg"
+                    class="card-img-top"
+                    alt="GPT-PromptEngineering-Workshop-PM.jpg"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Den Projektalltag erleichtern - GPT und Prompt Engineering
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >IDea_Lab. 10.10.2023. Universität Graz</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="js-shuffle-item col mb-5"
+                data-groups='["workshop-agki"]'
+              >
+                <a
+                  href="https://docs.google.com/presentation/d/1q4OW0D6TJuomHcTGVwI0Go_HaLtbgKsQTnlSfyLh1vg/edit?usp=sharing"
+                  class="card card-transition text-decoration-none"
+                >
+                  <img
+                    src="../assets/img/work-gallery/Wegener-Center-Prompt-Engineering-Climate-Data-23.jpg"
+                    class="card-img-top"
+                    alt="Wegener-Center-Prompt-Engineering-Climate-Data-23.jpg"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Applied Generative AI in Climate Research. Prompt
+                      Engineering with ChatGPT-4
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >Wegener Center Seminars. 02.11.2023. Universität
+                      Graz</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+          <!-- Swiper Slider -->
+          <!--<div class="js-swiper-card-blocks swiper swiper-equal-height">
               <div class="swiper-wrapper">
-                <!-- Slide xslt -->
+                <!-\- Slide xslt -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://github.com/DigitalHumanitiesCraft/XSLT-Toolgallery"
@@ -798,13 +1457,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide fercan -->
+                <!-\- Slide fercan -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://patrimonium.huma-num.fr/atlas/editor/"
@@ -834,13 +1493,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide -->
+                <!-\- Slide -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://gams.uni-graz.at/context:exil"
@@ -868,13 +1527,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide xslt -->
+                <!-\- Slide xslt -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://docs.google.com/presentation/d/17QrDqIVVFtxc7_AMzSI8zGGMyMGS21DB8ciWEg1OCXE/edit?usp=sharing"
@@ -902,13 +1561,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide -->
+                <!-\- Slide -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://gams.uni-graz.at/context:szd"
@@ -929,13 +1588,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide -->
+                <!-\- Slide -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://gams.uni-graz.at/context:corema"
@@ -955,13 +1614,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide -->
+                <!-\- Slide -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://gams.uni-graz.at/context:cantus"
@@ -990,13 +1649,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide -->
+                <!-\- Slide -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://gams.uni-graz.at/context:aaif"
@@ -1025,13 +1684,13 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
 
-                <!-- Slide -->
+                <!-\- Slide -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://gams.uni-graz.at/context:depcha"
@@ -1055,12 +1714,12 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
-                <!-- Slide -->
+                <!-\- End Slide -\->
+                <!-\- Slide -\->
                 <div class="swiper-slide">
-                  <!-- Card -->
+                  <!-\- Card -\->
                   <div class="card h-100">
                     <a
                       href="https://gams.uni-graz.at/context:ufbas"
@@ -1087,18 +1746,17 @@
                       </div>
                     </a>
                   </div>
-                  <!-- End Card -->
+                  <!-\- End Card -\->
                 </div>
-                <!-- End Slide -->
+                <!-\- End Slide -\->
               </div>
 
-              <!-- Swiper Pagination -->
+              <!-\- Swiper Pagination -\->
               <div
                 class="js-swiper-card-blocks-pagination swiper-pagination swiper-pagination-dark"
               ></div>
-            </div>
-            <!-- End Swiper Slider -->
-          </div>
+            </div>-->
+          <!-- End Swiper Slider -->
         </div>
       </div>
       <!-- End Work Section -->
@@ -1650,7 +2308,7 @@
     <!-- JS Implementing Plugins -->
     <script src="./assets/js/vendor.min.js"></script>
     <script src="./assets/vendor/aos/dist/aos.js"></script>
-    <!-- <script src="./node_modules/shufflejs/dist/shuffle.js"></script> -->
+    <script src="./assets/vendor/shuffle/shuffle.min.js"></script>
 
     <!-- JS Front -->
     <script src="./assets/js/theme.min.js"></script>
@@ -1736,7 +2394,7 @@
 
         // INITIALIZATION OF NAV SCROLLER
         // =======================================================
-        // new HsNavScroller(".js-nav-scroller");
+        new HsNavScroller(".js-nav-scroller");
 
         // INITIALIZATION OF CLIPBOARD JS
         // =======================================================
@@ -1761,58 +2419,58 @@
 
         // INITIALIZATION OF SHUFFLE
         // =======================================================
-        // class ShufflePorfolio {
-        //   constructor(element) {
-        //     this.element = element;
-        //     this.shuffle = new Shuffle(element, {
-        //       itemSelector: ".js-shuffle-item",
-        //       speed: 500,
-        //     });
+        class ShufflePorfolio {
+          constructor(element) {
+            this.element = element;
+            this.shuffle = new Shuffle(element, {
+              itemSelector: ".js-shuffle-item",
+              speed: 500,
+            });
 
-        //     this.addFilterButtons();
-        //   }
+            this.addFilterButtons();
+          }
 
-        //   addFilterButtons() {
-        //     const options = document.querySelector(".js-filter-options");
-        //     if (!options) {
-        //       return;
-        //     }
+          addFilterButtons() {
+            const options = document.querySelector(".js-filter-options");
+            if (!options) {
+              return;
+            }
 
-        //     const filterButtons = Array.from(options.children);
-        //     const onClick = this._handleFilterClick.bind(this);
-        //     filterButtons.forEach((button) => {
-        //       button.addEventListener("click", onClick, false);
-        //     });
-        //   }
+            const filterButtons = Array.from(options.children);
+            const onClick = this._handleFilterClick.bind(this);
+            filterButtons.forEach((button) => {
+              button.addEventListener("click", onClick, false);
+            });
+          }
 
-        //   _handleFilterClick(evt) {
-        //     const btn = evt.currentTarget.firstElementChild;
-        //     const isActive = btn.classList.contains("active");
-        //     const btnGroup = btn.getAttribute("data-group");
+          _handleFilterClick(evt) {
+            const btn = evt.currentTarget.firstElementChild;
+            const isActive = btn.classList.contains("active");
+            const btnGroup = btn.getAttribute("data-group");
 
-        //     this._removeActiveClassFromChildren(btn.parentNode.parentNode);
+            this._removeActiveClassFromChildren(btn.parentNode.parentNode);
 
-        //     let filterGroup;
-        //     if (isActive) {
-        //       btn.classList.remove("active");
-        //       filterGroup = Shuffle.ALL_ITEMS;
-        //     } else {
-        //       btn.classList.add("active");
-        //       filterGroup = btnGroup;
-        //     }
+            let filterGroup;
+            if (isActive) {
+              btn.classList.remove("active");
+              filterGroup = Shuffle.ALL_ITEMS;
+            } else {
+              btn.classList.add("active");
+              filterGroup = btnGroup;
+            }
 
-        //     this.shuffle.filter(filterGroup);
-        //   }
+            this.shuffle.filter(filterGroup);
+          }
 
-        //   _removeActiveClassFromChildren(parent) {
-        //     const { children } = parent;
-        //     for (let i = children.length - 1; i >= 0; i--) {
-        //       children[i].firstElementChild.classList.remove("active");
-        //     }
-        //   }
-        // }
+          _removeActiveClassFromChildren(parent) {
+            const { children } = parent;
+            for (let i = children.length - 1; i >= 0; i--) {
+              children[i].firstElementChild.classList.remove("active");
+            }
+          }
+        }
 
-        // new ShufflePorfolio(document.querySelector(".js-shuffle"));
+        new ShufflePorfolio(document.querySelector(".js-shuffle"));
       })();
     </script>
     <!-- Choose language according to Browser Settings -->
