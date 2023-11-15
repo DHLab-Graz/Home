@@ -155,6 +155,15 @@
                   >Preise</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  lang="de"
+                  href="#partnerSection"
+                  id="partnerSectionLink"
+                  >Partner</a
+                >
+              </li>
 
               <li class="nav-item">
                 <a
@@ -163,6 +172,15 @@
                   href="#workSection"
                   id="workSectionLink"
                   >Arbeit</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  lang="de"
+                  href="#ongoingSection"
+                  id="ongoingSectionLink"
+                  >Laufend</a
                 >
               </li>
 
@@ -233,6 +251,7 @@
           </div>
           <div class="col-lg-4 d-none d-lg-block">
             <img
+              loading="lazy"
               class="img-fluid"
               src="./assets/svg/logos/dhcraft_logo_invert.svg"
               alt="DH Craft Logo"
@@ -642,6 +661,7 @@
             <div class="pe-lg-6">
               <span class="svg-icon text-primary mb-3">
                 <img
+                  loading="lazy"
                   src="./assets/svg/logos/gams_logo.svg"
                   width="140"
                   alt="GAMS Logo"
@@ -709,6 +729,7 @@
       <div class="container" id="pricingSection">
         <div class="w-75 mx-auto mb-7">
           <img
+            loading="lazy"
             class="img-fluid"
             src="./assets/svg/components/three-pointers.svg"
             alt="SVG Arrow"
@@ -741,21 +762,133 @@
       </div>
       <!-- End Prices -->
 
+      <!-- Partners -->
+      <div
+        id="partnerSection"
+        class="bg-light container-fluid content-space-2 content-space-lg-3"
+      >
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
+          <h1>
+            <span class="switchLang showLang" lang="de">Partner</span
+            ><span class="switchLang" lang="en">Partners</span>
+          </h1>
+        </div>
+        <!-- End Heading -->
+        <div class="logo-bar">
+          <div class="container">
+            <div class="row logo-bar align-items-center justify-content-center">
+              <!-- Add your logos inside the divs below -->
+              <div class="col-auto my-2">
+                <img
+                  height="80"
+                  loading="lazy"
+                  src="./assets/img/logos/zim-logo.png"
+                  alt="Institut Zentrum für Informationsmodellierung - Uni Graz"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/unigraz-logo.png"
+                  alt="University of Graz"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/uniwien-logo.png"
+                  alt="University of Vienna"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/yaleuniv-blue.png"
+                  alt="Yale University"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  style="max-height: 140px"
+                  loading="lazy"
+                  src="./assets/img/logos/khm-logo.png"
+                  alt="Kunsthistorisches Museum Wien"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/oeaw-logo.png"
+                  alt="Österreichische Akademie der Wissenschaften"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/las-logo.jpg"
+                  alt="Literaturarchiv Salzburg"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/plus-logo.png"
+                  alt="Universität Salzburg"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/unidonau-logo.png"
+                  alt="Donau-Universität Krems - Universität für Weiterbildung"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  loading="lazy"
+                  src="./assets/img/logos/clariah-logo.png"
+                  alt="CLARIAH-AT"
+                />
+              </div>
+              <div class="col-auto my-2">
+                <img
+                  height="80"
+                  loading="lazy"
+                  src="./assets/img/logos/weimar-logo.png"
+                  alt="Klassikstiftung Weimar"
+                />
+              </div>
+
+              <div class="col-auto my-2">
+                <img
+                  height="80"
+                  loading="lazy"
+                  src="./assets/img/logos/unisaarland-logo.png"
+                  alt="Universität des Saarlandes"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Partners Section -->
+
       <!-- Work Section -->
       <div
-        class="bg-light rounded-2 content-space-1 content-space-lg-2"
+        class="bg-light rounded-2 content-space-2 content-space-lg-3"
         id="workSection"
       >
         <div class="container-xl container-fluid">
           <!-- Heading -->
           <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
-            <!-- <span class="text-cap text-dark-70">Success stories</span> -->
             <h1>
               <span class="switchLang showLang" lang="de"
                 >Eine Auswahl unserer Arbeit</span
               ><span class="switchLang" lang="en">A selection of our work</span>
             </h1>
           </div>
+
           <!-- End Heading -->
           <div class="container content-space-b-1 content-space-b-lg-1">
             <!-- Nav Scroller -->
@@ -782,32 +915,26 @@
                     class="nav-link active"
                     href="javascript:;"
                     data-group="all"
+                    id="all"
                     >Alle</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:;" data-group="edition"
-                    >Digitale Edition</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:;" data-group="archive"
+                  <a
+                    class="nav-link"
+                    href="javascript:;"
+                    data-group="archive"
+                    id="digital-archive"
                     >Digitales Archiv</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:;" data-group="software"
-                    >Software</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:;" data-group="teaching"
-                    >Lehre</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:;" data-group="workshop"
-                    >Workshop</a
+                  <a
+                    class="nav-link"
+                    href="javascript:;"
+                    data-group="edition"
+                    id="digital-edition"
+                    >Digitale Edition</a
                   >
                 </li>
                 <li class="nav-item">
@@ -815,7 +942,36 @@
                     class="nav-link"
                     href="javascript:;"
                     data-group="workshop-agki"
+                    id="generative-ai"
                     >Generative KI</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="javascript:;"
+                    data-group="teaching"
+                    id="teaching"
+                    >Lehre</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="javascript:;"
+                    data-group="software"
+                    id="software"
+                    >Software</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="javascript:;"
+                    data-group="workshop"
+                    id="workshop"
+                    >Workshop</a
                   >
                 </li>
               </ul>
@@ -832,6 +988,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/exil.jpg"
                     alt="Exil:Trans"
@@ -854,6 +1011,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/szd.jpg"
                     alt="Stefan Zweig Digital"
@@ -878,6 +1036,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/digedtnt.jpg"
                     alt="DigEdTnt"
@@ -901,6 +1060,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/fercan.jpg"
                     alt="Fercan"
@@ -916,7 +1076,30 @@
                   </div>
                 </a>
               </div>
-              <!-- End Col -->
+              <div class="js-shuffle-item col mb-5" data-groups='["archive"]'>
+                <a
+                  class="card card-transition"
+                  href="https://gams.uni-graz.at/context:lipfa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    loading="lazy"
+                    class="card-img-top"
+                    src="../assets/img/work-gallery/lipfa.jpg"
+                    alt="Steirische Literaturpfade des Mittelalters"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Steirische Literaturpfade des Mittelalters
+                    </h3>
+                    <span class="card-subtitle text-body"
+                      >DH Craft &amp; Sebastian Schiller-Stoff &amp; Institut
+                      für Germanistik, Universität Graz</span
+                    >
+                  </div>
+                </a>
+              </div>
               <div class="js-shuffle-item col mb-5" data-groups='["edition"]'>
                 <a
                   class="card card-transition"
@@ -925,6 +1108,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/corema.jpg"
                     alt="Cooking Recipes of the Middle Ages"
@@ -946,6 +1130,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/cantus.jpg"
                     alt="Cantus Network"
@@ -971,6 +1156,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/depcha.jpg"
                     alt="Digital Edition Publishing Cooperative for Historical Accounts"
@@ -994,6 +1180,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/ufbas.jpg"
                     alt="Digitale Edition Urfehdebücher der Stadt Basel"
@@ -1016,6 +1203,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/aaif.jpg"
                     alt="Adjective-Adverb Interfaces in Romance"
@@ -1039,6 +1227,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/workshop-lod-rostock.jpg"
                     alt="Workshop"
@@ -1063,6 +1252,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/workshop-de-saarbruecken.jpg"
                     alt="Workshop"
@@ -1086,6 +1276,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/xslt.jpg"
                     alt="XSLT Toolgallery"
@@ -1109,6 +1300,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/github.jpg"
                     alt="XSLT Toolgallery"
@@ -1131,6 +1323,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/vsd-krems.jpg"
                     alt="VSD Krems"
@@ -1155,6 +1348,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/data-steward.jpg"
                     alt="Data Steward"
@@ -1176,6 +1370,7 @@
                   rel="noopener noreferrer"
                 >
                   <img
+                    loading="lazy"
                     class="card-img-top"
                     src="../assets/img/work-gallery/data-lib.jpg"
                     alt="Data Librarian"
@@ -1200,6 +1395,7 @@
                   class="card card-transition text-decoration-none"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/AGKI-RDF-Creation.jpg"
                     class="card-img-top"
                     alt="Workshop 1"
@@ -1225,6 +1421,7 @@
                   class="card card-transition text-decoration-none disabled"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/AGKI-DigitalEdition-Text-TEI-HSA.jpg"
                     class="card-img-top"
                     alt="Workshop 2"
@@ -1250,6 +1447,7 @@
                   class="card card-transition text-decoration-none disabled"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/AGKI-DataStory-ExilTrans.jpg"
                     class="card-img-top"
                     alt="Workshop 3"
@@ -1277,6 +1475,7 @@
                   class="card card-transition text-decoration-none"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/AGKI-ChatGPT-4-Advanced-Data-Analysis.jpg"
                     class="card-img-top"
                     alt="Workshop 4"
@@ -1303,6 +1502,7 @@
                   class="card card-transition text-decoration-none"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/AGKI-PromptEngineering.jpg"
                     class="card-img-top"
                     alt="Workshop 5"
@@ -1328,6 +1528,7 @@
                   class="card card-transition text-decoration-none"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/AGKI-Text-to-Image-Midjourney-DALL-E3.jpg"
                     class="card-img-top"
                     alt="Workshop 6"
@@ -1352,6 +1553,7 @@
                   class="card card-transition text-decoration-none"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/FORGE23.jpg"
                     class="card-img-top"
                     alt="FORGE23"
@@ -1379,6 +1581,7 @@
                   class="card card-transition text-decoration-none"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/GPT-PromptEngineering-Workshop-PM.jpg"
                     class="card-img-top"
                     alt="GPT-PromptEngineering-Workshop-PM.jpg"
@@ -1403,6 +1606,7 @@
                   class="card card-transition text-decoration-none"
                 >
                   <img
+                    loading="lazy"
                     src="../assets/img/work-gallery/Wegener-Center-Prompt-Engineering-Climate-Data-23.jpg"
                     class="card-img-top"
                     alt="Wegener-Center-Prompt-Engineering-Climate-Data-23.jpg"
@@ -1434,7 +1638,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/xslt.jpg"
                         alt="XSLT Toolgallery"
@@ -1470,7 +1674,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/fercan.jpg"
                         alt="Fercan"
@@ -1506,7 +1710,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/exil.jpg"
                         alt="Exil:Trans"
@@ -1540,7 +1744,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/github.jpg"
                         alt="XSLT Toolgallery"
@@ -1574,7 +1778,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/szd.jpg"
                         alt="Stefan Zweig Digital"
@@ -1601,7 +1805,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/corema.jpg"
                         alt="Cooking Recipes of the Middle Ages"
@@ -1627,7 +1831,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/cantus.jpg"
                         alt="Cantus Network"
@@ -1662,7 +1866,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/aaif.jpg"
                         alt="Adjective-Adverb Interfaces in Romance"
@@ -1697,7 +1901,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/depcha.jpg"
                         alt="Digital Edition Publishing Cooperative for Historical
@@ -1726,7 +1930,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <img loading="lazy"
                         class="card-img-top"
                         src="../assets/img/work-gallery/ufbas.jpg"
                         alt="Digitale Edition Urfehdebücher der Stadt Basel"
@@ -1761,206 +1965,307 @@
       </div>
       <!-- End Work Section -->
 
-      <!-- Team -->
+      <!-- Ongoing -->
       <div
-        id="teamSection"
+        id="ongoingSection"
         class="container content-space-2 content-space-lg-3"
       >
         <!-- Heading -->
         <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
-          <!-- <span class="text-cap text-dark-70">Success stories</span> -->
-          <h1>Team</h1>
+          <h1>
+            <span class="switchLang showLang" lang="de">Laufende Projekte</span
+            ><span class="switchLang" lang="en">Ongoing work</span>
+          </h1>
         </div>
         <!-- End Heading -->
-        <div class="mb-7">
-          <!-- <div class="position-relative">
-              <img
+        <div class="table-responsive">
+          <table class="table table-vertical-border-striped">
+            <thead>
+              <tr>
+                <th>
+                  <span class="switchLang showLang" lang="de">Projekt</span>
+                  <span class="switchLang" lang="en">Project</span>
+                </th>
+                <th>
+                  <span class="switchLang showLang" lang="de">Partner</span>
+                  <span class="switchLang" lang="en">Partner</span>
+                </th>
+                <th>
+                  <span class="switchLang showLang" lang="de">Beschreibung</span>
+                  <span class="switchLang" lang="en">Description</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CROWN</td>
+                <td>Kunsthistorisches Museum Wien</td>
+                <td>
+                  <span class="switchLang showLang" lang="de">Datenmodellierung, Datentransformation und Webentwicklung für die Untersuchungen zu Materialität, Technologie und Erhaltungszustand der Wiener Reichskrone.</span>
+                  <span class="switchLang" lang="en">Data modeling, data transformation, and web development for the study of the materiality, technology, and preservation state of the Vienna Imperial Crown.</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Brentano Archiv</td>
+                <td>Universität Graz, Institut für Philosophie</td>
+                <td>
+                  <span class="switchLang showLang" lang="de">Erweiterung der Website des Franz Brentano-Archivs.</span>
+                  <span class="switchLang" lang="en">Expansion of the Franz Brentano Archive's website.</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Keltische Götternamen in den Inschriften der römischen Provinz Germania Inferior</td>
+                <td>Universität Graz, Institut für Antike</td>
+                <td>
+                  <span class="switchLang showLang" lang="de">Weiterentwicklung des Patrimonium Editors und der Website.</span>
+                  <span class="switchLang" lang="en">Further development of the Patrimonium Editor and the website.</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Demography and Society in Historical Southeastern Europe</td>
+                <td>Universität Graz, Institut für Geschichte</td>
+                <td>
+                  <span class="switchLang showLang" lang="de">Datenmodellierung, Datentransformation und Webentwicklung</span>
+                  <span class="switchLang" lang="en">Data modeling, data transformation, and web development.</span>
+                </td>
+              </tr>
+              <tr>
+                <td>SISTE VIATOR: Latein auf Stein 2.0</td>
+                <td>Universität Graz, Institut für Antike</td>
+                <td>
+                  <span class="switchLang showLang" lang="de">Consulting, Datenmodellierung, Datentransformation und Webentwicklung für das Projekt zu Lateinischen Inschriften für digitales und außerschulisches Lernen (LIDAL).</span>
+                  <span class="switchLang" lang="en">Consulting, data modeling, data transformation, and web development for the project on Latin inscriptions for digital and extracurricular learning (LIDAL).</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Stefan Zweig Digital</td>
+                <td>Literaturarchiv Salzburg</td>
+                <td>
+                  <span class="switchLang showLang" lang="de">Laufende Erweiterung von STEFAN ZWEIG DIGITAL</span>
+                  <span class="switchLang" lang="en">Ongoing expansion of STEFAN ZWEIG DIGITAL.</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Yale’s Fortunoff Archive</td>
+                <td>Yale University, Fortunoff Video Archive for Holocaust Testimonies</td>
+                <td>
+                  <span class="switchLang showLang" lang="de">Consulting, Support und Weiterentwicklung der DH Tools des Archivs.</span>
+                  <span class="switchLang" lang="en">Consulting, Support and further Development of the archive's DH tools.</span>
+                </td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+      <!-- End Ongoing Section -->
+
+      <!-- Team -->
+      <div class="bg-light">
+        <div
+          id="teamSection"
+          class="container content-space-2 content-space-lg-3"
+        >
+          <!-- Heading -->
+          <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
+            <!-- <span class="text-cap text-dark-70">Success stories</span> -->
+            <h1>Team</h1>
+          </div>
+          <!-- End Heading -->
+          <div class="mb-7">
+            <!-- <div class="position-relative">
+              <img loading="lazy"
                 class="img-fluid rounded-2"
                 src="./assets/img/colorsplash.png"
                 alt="Image Description"
               />
             </div> -->
-          <img
-            class="card-img rounded-2"
-            src="./assets/img/colorsplash.png"
-            alt="Image Description"
-          />
-          <div class="card card-sm text-center mt-n7 mx-3">
-            <div class="card-body">
-              <h4 class="card-title">
-                Christian Steiner &amp; Christopher Pollin
-              </h4>
-              <p class="card-text">Founders / CEO</p>
-            </div>
-          </div>
-          <!-- End Col -->
-        </div>
-        <!-- End Row -->
-        <div class="row">
-          <div class="col-6 mb-3">
-            <!-- Card -->
-            <div class="card card-transition h-100">
+            <img
+              loading="lazy"
+              class="card-img rounded-2"
+              src="./assets/img/colorsplash.png"
+              alt="Image Description"
+            />
+            <div class="card card-sm text-center mt-n7 mx-3">
               <div class="card-body">
-                <div class="avatar avatar-lg avatar-circle mb-4">
-                  <img
-                    class="avatar-img"
-                    src="./assets/img/chris-solo-website.png"
-                    alt="Image Description"
-                  />
-                </div>
-                <h4 class="card-title">Christian Steiner</h4>
-                <p class="card-text switchLang showLang" lang="de">
-                  hat einen Masterabschluss in Übersetzen/Dolmetschen und
-                  Digital Humanities. Seit 2012 wissenschaftlicher Mitarbeiter
-                  am
-                  <a
-                    href="//zim.uni-graz.at"
-                    class="text-primary text-highlight-warning fw-bold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Zentrum für Informationsmodellierung (ZIM) an der
-                    Universität Graz</a
-                  >.
-                </p>
-                <p class="card-text switchLang" lang="en">
-                  holds a master's degree in Translation/Interpreting and
-                  Digital Humanities. Since 2012 research assistant at the
-                  <a
-                    href="//zim.uni-graz.at"
-                    class="text-primary text-highlight-warning fw-bold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Centre for Information Modelling (ZIM) at the University of
-                    Graz</a
-                  >.
-                </p>
-              </div>
-
-              <div class="card-footer pt-0">
-                <!-- Socials -->
-                <ul class="list-inline mb-0">
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="mailto:christian.steiner@dhcraft.org"
-                      title="E-Mail"
-                    >
-                      <i class="bi-envelope"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://chsteiner.github.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Academic CV"
-                    >
-                      <i class="bi-house"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://twitter.com/Chris_Traube"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Twitter"
-                    >
-                      <i class="bi-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
-                <!-- End Socials -->
+                <h4 class="card-title">
+                  Christian Steiner &amp; Christopher Pollin
+                </h4>
+                <p class="card-text">Founders / CEO</p>
               </div>
             </div>
-            <!-- End Card -->
+            <!-- End Col -->
           </div>
-          <div class="col-6 mb-3">
-            <!-- Card -->
-            <div class="card card-transition h-100">
-              <div class="card-body">
-                <div class="avatar avatar-lg avatar-circle mb-4">
-                  <img
-                    class="avatar-img"
-                    src="./assets/img/christopher-solo-website.png"
-                    alt="Image Description"
-                  />
+          <!-- End Row -->
+          <div class="row">
+            <div class="col-6 mb-3">
+              <!-- Card -->
+              <div class="card card-transition h-100">
+                <div class="card-body">
+                  <div class="avatar avatar-lg avatar-circle mb-4">
+                    <img
+                      loading="lazy"
+                      class="avatar-img"
+                      src="./assets/img/chris-solo-website.png"
+                      alt="Image Description"
+                    />
+                  </div>
+                  <h4 class="card-title">Christian Steiner</h4>
+                  <p class="card-text switchLang showLang" lang="de">
+                    hat einen Masterabschluss in Übersetzen/Dolmetschen und
+                    Digital Humanities. Seit 2012 wissenschaftlicher Mitarbeiter
+                    am
+                    <a
+                      href="//zim.uni-graz.at"
+                      class="text-primary text-highlight-warning fw-bold"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Zentrum für Informationsmodellierung (ZIM) an der
+                      Universität Graz</a
+                    >.
+                  </p>
+                  <p class="card-text switchLang" lang="en">
+                    holds a master's degree in Translation/Interpreting and
+                    Digital Humanities. Since 2012 research assistant at the
+                    <a
+                      href="//zim.uni-graz.at"
+                      class="text-primary text-highlight-warning fw-bold"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Centre for Information Modelling (ZIM) at the University
+                      of Graz</a
+                    >.
+                  </p>
                 </div>
-                <h4 class="card-title">Christopher Pollin</h4>
-                <p class="card-text switchLang showLang" lang="de">
-                  hat einen Masterabschluss in Geschichte und Digital
-                  Humanities. Seit 2016 wissenschaftlicher Mitarbeiter am
-                  <a
-                    href="//zim.uni-graz.at"
-                    class="text-primary text-highlight-warning fw-bold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Zentrum für Informationsmodellierung (ZIM) an der
-                    Universität Graz</a
-                  >.
-                </p>
-                <p class="card-text switchLang" lang="en">
-                  holds a master's degree in History and Digital Humanities.
-                  Since 2016 research assistant at the
-                  <a
-                    href="//zim.uni-graz.at"
-                    class="text-primary text-highlight-warning fw-bold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Centre for Information Modelling (ZIM) at the University of
-                    Graz</a
-                  >.
-                </p>
-              </div>
 
-              <div class="card-footer pt-0">
-                <!-- Socials -->
-                <ul class="list-inline mb-0">
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="mailto:christopher.pollin@dhcraft.org"
-                      title="E-Mail"
-                    >
-                      <i class="bi-envelope"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://chpollin.github.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Academic CV"
-                    >
-                      <i class="bi-house"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="btn btn-outline-primary btn-xs btn-icon rounded"
-                      href="https://twitter.com/LurchPollin"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Twitter"
-                    >
-                      <i class="bi-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
-                <!-- End Socials -->
+                <div class="card-footer pt-0">
+                  <!-- Socials -->
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <a
+                        class="btn btn-outline-primary btn-xs btn-icon rounded"
+                        href="mailto:christian.steiner@dhcraft.org"
+                        title="E-Mail"
+                      >
+                        <i class="bi-envelope"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        class="btn btn-outline-primary btn-xs btn-icon rounded"
+                        href="https://chsteiner.github.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Academic CV"
+                      >
+                        <i class="bi-house"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        class="btn btn-outline-primary btn-xs btn-icon rounded"
+                        href="https://twitter.com/Chris_Traube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Twitter"
+                      >
+                        <i class="bi-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End Socials -->
+                </div>
               </div>
+              <!-- End Card -->
             </div>
-            <!-- End Card -->
+            <div class="col-6 mb-3">
+              <!-- Card -->
+              <div class="card card-transition h-100">
+                <div class="card-body">
+                  <div class="avatar avatar-lg avatar-circle mb-4">
+                    <img
+                      loading="lazy"
+                      class="avatar-img"
+                      src="./assets/img/christopher-solo-website.png"
+                      alt="Image Description"
+                    />
+                  </div>
+                  <h4 class="card-title">Christopher Pollin</h4>
+                  <p class="card-text switchLang showLang" lang="de">
+                    hat einen Masterabschluss in Geschichte und Digital
+                    Humanities. Seit 2016 wissenschaftlicher Mitarbeiter am
+                    <a
+                      href="//zim.uni-graz.at"
+                      class="text-primary text-highlight-warning fw-bold"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Zentrum für Informationsmodellierung (ZIM) an der
+                      Universität Graz</a
+                    >.
+                  </p>
+                  <p class="card-text switchLang" lang="en">
+                    holds a master's degree in History and Digital Humanities.
+                    Since 2016 research assistant at the
+                    <a
+                      href="//zim.uni-graz.at"
+                      class="text-primary text-highlight-warning fw-bold"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Centre for Information Modelling (ZIM) at the University
+                      of Graz</a
+                    >.
+                  </p>
+                </div>
+
+                <div class="card-footer pt-0">
+                  <!-- Socials -->
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <a
+                        class="btn btn-outline-primary btn-xs btn-icon rounded"
+                        href="mailto:christopher.pollin@dhcraft.org"
+                        title="E-Mail"
+                      >
+                        <i class="bi-envelope"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        class="btn btn-outline-primary btn-xs btn-icon rounded"
+                        href="https://chpollin.github.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Academic CV"
+                      >
+                        <i class="bi-house"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        class="btn btn-outline-primary btn-xs btn-icon rounded"
+                        href="https://twitter.com/LurchPollin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Twitter"
+                      >
+                        <i class="bi-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End Socials -->
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
           </div>
-          <!-- End Col -->
+          <!-- End Row -->
         </div>
-        <!-- End Row -->
       </div>
       <!-- End Team -->
     </main>
@@ -2111,6 +2416,7 @@
               aria-label="Dh Craft"
             >
               <img
+                loading="lazy"
                 class="brand"
                 src="./assets/svg/logos/dhcraft_logo_invert.svg"
                 alt="Logo"
@@ -2506,6 +2812,16 @@
           document.querySelector("#pricingSectionLink").innerHTML = "Preise";
           document.querySelector("#workSectionLink").innerHTML = "Arbeit";
           document.querySelector("#footerLink").innerHTML = "Kontakt";
+          document.querySelector("#ongoingSectionLink").innerHTML = "Laufend";
+          document.querySelector("#partnerSectionLink").innerHTML = "Partner";
+
+          document.querySelector("#all").innerHTML = "Alle";
+          document.querySelector("#digital-archive").innerHTML =
+            "Digitales Archiv";
+          document.querySelector("#digital-edition").innerHTML =
+            "Digitale Edition";
+          document.querySelector("#generative-ai").innerHTML = "Generative KI";
+          document.querySelector("#teaching").innerHTML = "Lehre";
         }
       }
 
@@ -2520,6 +2836,16 @@
           document.querySelector("#pricingSectionLink").innerHTML = "Pricing";
           document.querySelector("#workSectionLink").innerHTML = "Work";
           document.querySelector("#footerLink").innerHTML = "Contact";
+          document.querySelector("#ongoingSectionLink").innerHTML = "Ongoing";
+          document.querySelector("#partnerSectionLink").innerHTML = "Partners";
+
+          document.querySelector("#all").innerHTML = "All";
+          document.querySelector("#digital-archive").innerHTML =
+            "Digital Archive";
+          document.querySelector("#digital-edition").innerHTML =
+            "Digital Edition";
+          document.querySelector("#generative-ai").innerHTML = "Generative AI";
+          document.querySelector("#teaching").innerHTML = "Teaching";
         }
       }
     </script>
