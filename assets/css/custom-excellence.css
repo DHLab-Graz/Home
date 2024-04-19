@@ -30,3 +30,6 @@ header a:hover img {
 .go-to:hover {
   background-color: #763913;
 }
+.link-secondary[href]:hover, .nav-segment .nav-link:hover {
+  color: #763913 !important;
+}
