@@ -1,5 +1,5 @@
 header {
-  position: fixed;
+  position: absolute;
   right: 20px;
   top: 0;
   z-index: 1030;
@@ -24,12 +24,12 @@ header a:hover img {
 }
 
 .gradient-x-overlay-sm-primary::before {
-  background-image: linear-gradient(45deg, transparent, rgb(237 203 152 / 50%));
+  background-image: linear-gradient(45deg,transparent,rgba(254,189,71,.05))
 }
 
 .go-to:focus:hover, .go-to:hover {
-  background-color: #763913;
+  background-color: #27B4C7;
 }
 .link-secondary[href]:hover, .nav-segment .nav-link:hover {
-  color: #763913 !important;
+  color: #27B4C7 !important;
 }
