@@ -341,20 +341,26 @@
                 >
               </li>
               <li>
-                <a class="link link-sm link-secondary" href="https://dhcraft.org/#pricingSection"
+                <a
+                  class="link link-sm link-secondary"
+                  href="https://dhcraft.org/#pricingSection"
                   ><span class="switchLang showLang" lang="de">Preise</span
                   ><span class="switchLang" lang="en">Pricing</span></a
                 >
               </li>
               <li>
-                <a class="link link-sm link-secondary" href="https://dhcraft.org/#workSection"
+                <a
+                  class="link link-sm link-secondary"
+                  href="https://dhcraft.org/#workSection"
                   ><span class="switchLang showLang" lang="de">Arbeit</span
                   ><span class="switchLang" lang="en">Work</span></a
                 >
               </li>
 
               <li>
-                <a class="link link-sm link-secondary" href="https://dhcraft.org/#teamSection"
+                <a
+                  class="link link-sm link-secondary"
+                  href="https://dhcraft.org/#teamSection"
                   >Team</a
                 >
               </li>
@@ -371,7 +377,9 @@
             <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
               <li>
-                <a class="link link-sm link-secondary" href="https://dhcraft.org/imprint"
+                <a
+                  class="link link-sm link-secondary"
+                  href="https://dhcraft.org/imprint"
                   ><span class="switchLang showLang" lang="de">Impressum</span
                   ><span class="switchLang" lang="en">Imprint</span></a
                 >
@@ -553,8 +561,37 @@
 
     <!-- ========== END FOOTER ========== -->
 
+    <!-- JS Implementing Plugins -->
+    <script src="./assets/js/vendor.min.js"></script>
+
     <!-- JS Front -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      (function () {
+        // INITIALIZATION OF CLIPBOARD JS
+        // =======================================================
+        let clipboard = new ClipboardJS(".copyToClipboard");
+
+        clipboard.on("success", function (e) {
+          e.trigger.title = "Copied";
+          e.trigger.firstElementChild.className = "bi bi-check2";
+
+          e.clearSelection();
+
+          const clipboardTimeout = setTimeout(changeBackClipboard, 2500);
+
+          function changeBackClipboard() {
+            var title = (document.getElementById("copyToClipboard").title =
+              "Copy to clipboard");
+            var icon = (document.getElementById(
+              "copyToClipboard"
+            ).firstElementChild.className = "bi bi-clipboard");
+          }
+        });
+      })();
+    </script>
 
     <!-- Choose language according to Browser Settings -->
     <script>
@@ -566,12 +603,17 @@
           return;
         } else {
           //window.location.href = "";
-          x.forEach((p) => p.classList.toggle("show"));
+          x.forEach((p) => p.classList.toggle("showLang"));
           document.documentElement.setAttribute("lang", "en");
+          document.querySelector("#aboutSectionLink").innerHTML = "Services";
+          document.querySelector("#pricingSectionLink").innerHTML = "Pricing";
+          document.querySelector("#workSectionLink").innerHTML = "Work";
+          document.querySelector("#footerLink").innerHTML = "Contact";
         }
       };
       changeLangPage();
     </script>
+    <!-- Choose Language with select -->
     <script>
       function switchLangToDE() {
         var x = document.querySelectorAll(".switchLang");
@@ -580,6 +622,20 @@
         } else {
           x.forEach((p) => p.classList.toggle("showLang"));
           document.documentElement.setAttribute("lang", "de");
+          document.querySelector("#aboutSectionLink").innerHTML = "Angebot";
+          document.querySelector("#pricingSectionLink").innerHTML = "Preise";
+          document.querySelector("#workSectionLink").innerHTML = "Arbeit";
+          document.querySelector("#footerLink").innerHTML = "Kontakt";
+          document.querySelector("#ongoingSectionLink").innerHTML = "Laufend";
+          document.querySelector("#partnerSectionLink").innerHTML = "Partner";
+
+          document.querySelector("#all").innerHTML = "Alle";
+          document.querySelector("#digital-archive").innerHTML =
+            "Digitales Archiv";
+          document.querySelector("#digital-edition").innerHTML =
+            "Digitale Edition";
+          document.querySelector("#generative-ai").innerHTML = "Generative KI";
+          document.querySelector("#teaching").innerHTML = "Lehre";
         }
       }
 
@@ -590,6 +646,20 @@
         } else {
           x.forEach((p) => p.classList.toggle("showLang"));
           document.documentElement.setAttribute("lang", "en");
+          document.querySelector("#aboutSectionLink").innerHTML = "Services";
+          document.querySelector("#pricingSectionLink").innerHTML = "Pricing";
+          document.querySelector("#workSectionLink").innerHTML = "Work";
+          document.querySelector("#footerLink").innerHTML = "Contact";
+          document.querySelector("#ongoingSectionLink").innerHTML = "Ongoing";
+          document.querySelector("#partnerSectionLink").innerHTML = "Partners";
+
+          document.querySelector("#all").innerHTML = "All";
+          document.querySelector("#digital-archive").innerHTML =
+            "Digital Archive";
+          document.querySelector("#digital-edition").innerHTML =
+            "Digital Edition";
+          document.querySelector("#generative-ai").innerHTML = "Generative AI";
+          document.querySelector("#teaching").innerHTML = "Teaching";
         }
       }
     </script>
