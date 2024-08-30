@@ -2,22 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://dhcraft.org/</loc>
-        <lastmod>2023-01-12T07:29:48+00:00</lastmod>
+        <lastmod>2024-08-30T08:30:00+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://dhcraft.org/index.html</loc>
-        <lastmod>2022-01-12T07:29:48+00:00</lastmod>
+        <loc>https://dhcraft.org/imprint</loc>
+        <lastmod>2024-08-30T08:30:00+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://dhcraft.org/imprint.html</loc>
-        <lastmod>2022-01-12T07:29:48+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://dhcraft.org/excellence/index.html</loc>
-        <lastmod>2024-01-12T07:29:48+00:00</lastmod>
+        <loc>https://dhcraft.org/excellence</loc>
+        <lastmod>2024-08-30T08:30:00+00:00</lastmod>
         <priority>0.80</priority>
     </url>
 </urlset>
