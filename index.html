@@ -2580,13 +2580,22 @@ GM-DH/workshop-pages/workshop1.html"
         if (userLang.startsWith("de")) {
           return;
         } else {
-          //window.location.href = "";
           x.forEach((p) => p.classList.toggle("showLang"));
           document.documentElement.setAttribute("lang", "en");
           document.querySelector("#aboutSectionLink").innerHTML = "Services";
           document.querySelector("#pricingSectionLink").innerHTML = "Pricing";
           document.querySelector("#workSectionLink").innerHTML = "Work";
           document.querySelector("#footerLink").innerHTML = "Contact";
+          document.querySelector("#ongoingSectionLink").innerHTML = "Ongoing";
+          document.querySelector("#partnerSectionLink").innerHTML = "Partners";
+
+          document.querySelector("#all").innerHTML = "All";
+          document.querySelector("#digital-archive").innerHTML =
+            "Digital Archive";
+          document.querySelector("#digital-edition").innerHTML =
+            "Digital Edition";
+          document.querySelector("#generative-ai").innerHTML = "Generative AI";
+          document.querySelector("#teaching").innerHTML = "Teaching";
         }
       };
       changeLangPage();
