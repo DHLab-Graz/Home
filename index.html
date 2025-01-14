@@ -1057,10 +1057,7 @@
               </span>
 
               <!-- Nav -->
-              <ul
-                class="js-filter-options nav nav-segment nav-pills d-flex mx-auto justify-content-center"
-                style="max-width: 50rem"
-              >
+              <ul class="js-filter-options nav nav-pills nav-segment d-flex mx-auto" style="max-width: 36rem;">
                 <li class="nav-item">
                   <a
                     class="nav-link active"
@@ -2240,15 +2237,6 @@
         // INITIALIZATION OF BOOTSTRAP DROPDOWN
         HSBsDropdown.init();
 
-        // INITIALIZATION OF BOOTSTRAP VALIDATION
-        // =======================================================
-        HSBsValidation.init(".js-validate", {
-          onSubmit: (data) => {
-            data.event.preventDefault();
-            alert("Submited");
-          },
-        });
-
         // INITIALIZATION OF GO TO
         // =======================================================
         new HSGoTo(".js-go-to");
@@ -2275,60 +2263,9 @@
           scrollOffset: 20,
         });
 
-        // INITIALIZATION OF BOOTSTRAP VALIDATION
-        // =======================================================
-        HSBsValidation.init(".js-validate", {
-          onSubmit: (data) => {
-            data.event.preventDefault();
-            alert("Submited");
-          },
-        });
-
-        // INITIALIZATION OF SWIPER
-        // =======================================================
-        var swiper = new Swiper(".js-swiper-card-blocks", {
-          slidesPerView: 1,
-          pagination: {
-            el: ".js-swiper-card-blocks-pagination",
-            dynamicBullets: true,
-            clickable: true,
-          },
-          breakpoints: {
-            620: {
-              slidesPerView: 2,
-              spaceBetween: 15,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
-          },
-        });
-
         // INITIALIZATION OF NAV SCROLLER
         // =======================================================
         new HsNavScroller(".js-nav-scroller");
-
-        // INITIALIZATION OF CLIPBOARD JS
-        // =======================================================
-        let clipboard = new ClipboardJS(".copyToClipboard");
-
-        clipboard.on("success", function (e) {
-          e.trigger.title = "Copied";
-          e.trigger.firstElementChild.className = "bi bi-check2";
-
-          e.clearSelection();
-
-          const clipboardTimeout = setTimeout(changeBackClipboard, 2500);
-
-          function changeBackClipboard() {
-            var title = (document.getElementById("copyToClipboard").title =
-              "Copy to clipboard");
-            var icon = (document.getElementById(
-              "copyToClipboard"
-            ).firstElementChild.className = "bi bi-clipboard");
-          }
-        });
 
         // INITIALIZATION OF SHUFFLE
         // =======================================================
